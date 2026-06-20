@@ -1,0 +1,98 @@
+.logos-strip {
+  background: var(--charcoal);
+  border-top: 1px solid rgba(250,248,244,0.07);
+  border-bottom: 1px solid rgba(250,248,244,0.07);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-strip__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--charcoal);
+  border-right: 1px solid rgba(250,248,244,0.07);
+  white-space: nowrap;
+}
+
+/* Fade edges */
+.logos-strip__track-wrap {
+  flex: 1;
+  overflow: hidden;
+  padding-left: 130px;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.logos-strip__track {
+  display: flex;
+  align-items: center;
+  animation: logosScroll 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes logosScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.logos-strip:hover .logos-strip__track {
+  animation-play-state: paused;
+}
+
+.logos-strip__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  padding: 20px 0;
+  color: rgba(250,248,244,0.55);
+  transition: color 0.25s ease;
+  cursor: default;
+}
+
+.logos-strip__item:hover { color: var(--white); }
+
+.logos-strip__item--display {
+  font-family: var(--font-display);
+  font-size: clamp(14px, 1.6vw, 18px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.logos-strip__item--serif {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.logos-strip__dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.35;
+  margin: 0 36px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .logos-strip__label { padding: 0 16px; font-size: 7px; }
+  .logos-strip__track-wrap { padding-left: 100px; }
+}
