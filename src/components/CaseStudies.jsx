@@ -19,7 +19,7 @@ const cases = [
       'Ensured fulfillment of all artists contractual obligations',
     ],
     highlights: ['Spotify Radar Artist of the Year', 'BET Hip Hop Awards Rap Cypher', 'Billboard Rookie of the Month', 'Rolling Loud Presents #StillSleepTour'],
-    video: { id: 'uo0jYV9QnGQ', label: 'Zig-Zag Studio Presents: Studio Sessions' },
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025 copy.png',
   },
   {
     name: 'Sheff G',
@@ -271,19 +271,14 @@ function CaseRow({ c, index, isOpen, onToggle }) {
                   {c.highlights.map((h, i) => <li key={i}>{h}</li>)}
                 </ul>
               </div>
-              {c.video && (
+              {c.highlightImage && (
                 <div className="cs-row__detail-block">
                   <h4 className="cs-row__detail-title cs-row__detail-title--gold">Featured</h4>
-                  <div className="cs-row__video-wrap">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${c.video.id}`}
-                      title={c.video.label}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="cs-row__video"
-                    />
-                    <p className="cs-row__video-label">{c.video.label}</p>
-                  </div>
+                  <img
+                    src={c.highlightImage}
+                    alt={`${c.name} highlights`}
+                    className="cs-row__highlight-img"
+                  />
                 </div>
               )}
             </div>
