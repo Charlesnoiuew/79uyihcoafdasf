@@ -371,6 +371,30 @@
 .cs-row__detail-list--gold li { color: rgba(250,248,244,0.85); }
 .cs-row__detail-list--gold li::before { color: var(--gold); content: '✦'; font-size: 8px; top: 3px; }
 
+/* ── Video embed ── */
+.cs-row__video-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cs-row__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 4px;
+  display: block;
+}
+
+.cs-row__video-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(250,248,244,0.45);
+  margin: 0;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .cs__header { grid-template-columns: 1fr; gap: 40px; }

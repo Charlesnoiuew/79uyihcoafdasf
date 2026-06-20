@@ -18,7 +18,8 @@ const cases = [
       'Oversaw artists recording, marketing, and touring budgets',
       'Ensured fulfillment of all artists contractual obligations',
     ],
-    highlights: ['Spotify Radar Artist of the Year', 'BET Hip Hop Awards Rap Cypher', 'Billboard Rookie of the Month', 'Branded Partnership & Content w/ Zig Zag', 'Rolling Loud Presents #StillSleepTour'],
+    highlights: ['Spotify Radar Artist of the Year', 'BET Hip Hop Awards Rap Cypher', 'Billboard Rookie of the Month', 'Rolling Loud Presents #StillSleepTour'],
+    video: { id: 'uo0jYV9QnGQ', label: 'Zig-Zag Studio Presents: Studio Sessions' },
   },
   {
     name: 'Sheff G',
@@ -243,20 +244,35 @@ function CaseRow({ c, index, isOpen, onToggle }) {
             </div>
           </div>
 
-          <div className="cs-row__details">
-            <div className="cs-row__detail-block">
-              <h4 className="cs-row__detail-title">Responsibilities</h4>
-              <ul className="cs-row__detail-list">
-                {c.bullets.map((b, i) => <li key={i}>{b}</li>)}
-              </ul>
+            <div className="cs-row__details">
+              <div className="cs-row__detail-block">
+                <h4 className="cs-row__detail-title">Responsibilities</h4>
+                <ul className="cs-row__detail-list">
+                  {c.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                </ul>
+              </div>
+              <div className="cs-row__detail-block">
+                <h4 className="cs-row__detail-title cs-row__detail-title--gold">Highlights</h4>
+                <ul className="cs-row__detail-list cs-row__detail-list--gold">
+                  {c.highlights.map((h, i) => <li key={i}>{h}</li>)}
+                </ul>
+              </div>
+              {c.video && (
+                <div className="cs-row__detail-block">
+                  <h4 className="cs-row__detail-title cs-row__detail-title--gold">Featured</h4>
+                  <div className="cs-row__video-wrap">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${c.video.id}`}
+                      title={c.video.label}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="cs-row__video"
+                    />
+                    <p className="cs-row__video-label">{c.video.label}</p>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className="cs-row__detail-block">
-              <h4 className="cs-row__detail-title cs-row__detail-title--gold">Highlights</h4>
-              <ul className="cs-row__detail-list cs-row__detail-list--gold">
-                {c.highlights.map((h, i) => <li key={i}>{h}</li>)}
-              </ul>
-            </div>
-          </div>
 
         </div>
       </div>
