@@ -46,6 +46,10 @@
   user-select: none;
 }
 
+.logos-strip__img--invert {
+  filter: invert(1) brightness(0.85);
+}
+
 @media (max-width: 768px) {
   .logos-strip { height: 70px; }
   .logos-strip__label { padding: 0 16px; font-size: 7px; }
