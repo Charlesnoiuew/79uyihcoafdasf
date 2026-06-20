@@ -1,0 +1,94 @@
+.services { background: var(--black); }
+
+.services__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgba(250,248,244,0.06);
+  margin-bottom: 0;
+}
+
+.services__heading { color: var(--white); }
+
+.services__intro-serif {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.services__deck { max-width: 400px; }
+
+/* List */
+.services__list { display: flex; flex-direction: column; }
+
+.svc-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto 28px;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(250,248,244,0.055);
+  cursor: default;
+  position: relative;
+  transition: padding-left 0.3s ease, background 0.3s ease;
+}
+
+.svc-row::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.svc-row:hover { padding-left: 22px; background: rgba(201,162,39,0.03); }
+.svc-row:hover::before { width: 3px; }
+.svc-row:hover .svc-row__title { color: var(--gold-light); }
+.svc-row:hover .svc-row__arr { transform: translateX(8px); color: var(--gold-light); }
+.svc-row:hover .svc-row__num { color: var(--gold); }
+
+.svc-row__num {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: rgba(250,248,244,0.3);
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+
+.svc-row__title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 46px);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+.svc-row__aside {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(250,248,244,0.48);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.svc-row:hover .svc-row__aside { color: rgba(250,248,244,0.48); }
+
+.svc-row__arr {
+  font-size: 18px;
+  color: rgba(250,248,244,0.14);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .services__header { grid-template-columns: 1fr; gap: 40px; }
+  .svc-row { grid-template-columns: 40px 1fr 24px; gap: 20px; }
+  .svc-row__aside { display: none; }
+}
+@media (max-width: 600px) {
+  .svc-row__title { font-size: clamp(22px, 7vw, 36px); }
+  .svc-row { padding: 22px 0; }
+}

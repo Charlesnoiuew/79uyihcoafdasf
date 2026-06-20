@@ -1,0 +1,113 @@
+.pl {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050505;
+  overflow: hidden;
+}
+
+.pl__curtain {
+  position: absolute;
+  inset: 0;
+  background: #050505;
+  z-index: 1;
+  transform: translateY(0%);
+  transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.pl--exit .pl__curtain,
+.pl--done .pl__curtain {
+  transform: translateY(-102%);
+}
+
+.pl__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.pl__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 0.85;
+  margin-bottom: 24px;
+}
+
+.pl__line-wrap {
+  overflow: hidden;
+  padding-bottom: 0.04em;
+}
+
+.pl__line {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(88px, 15vw, 172px);
+  color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: block;
+  transform: translateY(110%);
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pl__line-wrap:nth-child(2) .pl__line {
+  color: #E4CF48;
+  filter: drop-shadow(0 0 60px rgba(228,207,72,0.3));
+}
+
+.pl--hold .pl__line,
+.pl--exit .pl__line {
+  transform: translateY(0);
+}
+
+.pl__sub-wrap {
+  overflow: hidden;
+}
+
+.pl__sub {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.48em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.26);
+  display: block;
+  transform: translateY(100%);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.pl--hold .pl__sub,
+.pl--exit .pl__sub {
+  transform: translateY(0);
+}
+
+.pl__bar-wrap {
+  width: 220px;
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+  margin-top: 36px;
+  overflow: hidden;
+}
+
+.pl__bar {
+  height: 100%;
+  background: #E4CF48;
+  width: 0%;
+  transition: none;
+}
+
+.pl--hold .pl__bar {
+  width: 100%;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pl--exit .pl__content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,272 @@
+.ar__heading {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 10vw, 130px);
+  line-height: 0.88;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.ar__heading-script {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  color: var(--gold);
+  margin-bottom: 0;
+}
+
+.ar-section {
+  background: var(--black);
+}
+
+.ar__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+
+.ar__tracks {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.ar__track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.ar__track--active {
+  padding-left: 16px;
+  background: rgba(232,212,77,0.03);
+}
+
+.ar__track--active .ar__track-num {
+  color: var(--yellow);
+}
+
+.ar__track-wrap {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.ar__track-wrap:first-child {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.ar__track-wrap:hover .ar__track:not(.ar__track--active) {
+  padding-left: 16px;
+  background: rgba(232,212,77,0.03);
+}
+
+.ar__track-wrap:hover .ar__track:not(.ar__track--active) .ar__track-num {
+  color: var(--yellow);
+}
+
+.ar__play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.ar__play-btn:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  background: rgba(232,212,77,0.08);
+  transform: scale(1.08);
+}
+
+.ar__play-btn--active {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  background: rgba(232,212,77,0.1);
+}
+
+.ar__play-btn--disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}
+
+.ar__player {
+  padding: 0 0 20px 80px;
+  animation: playerSlideIn 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes playerSlideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ar__spotify-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(29, 185, 84, 0.07);
+  border: 1px solid rgba(29, 185, 84, 0.25);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.25s ease;
+}
+
+.ar__spotify-link:hover {
+  background: rgba(29, 185, 84, 0.14);
+  border-color: rgba(29, 185, 84, 0.5);
+}
+
+.ar__spotify-icon {
+  color: #1DB954;
+  flex-shrink: 0;
+}
+
+.ar__spotify-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ar__spotify-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ar__spotify-sub {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1DB954;
+}
+
+.ar__track-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: rgba(255,255,255,0.42);
+  width: 48px;
+  flex-shrink: 0;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.ar__track-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ar__track-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ar__track-artist {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.ar__track-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ar__track-streams {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--yellow);
+  letter-spacing: 0.03em;
+}
+
+.ar__track-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--yellow);
+  padding: 4px 10px;
+}
+
+.ar__cta {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 48px;
+}
+
+.ar__cta-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ar__cta-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.ar__platform {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.ar__platform:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  background: rgba(232,212,77,0.05);
+}
+
+@media (max-width: 900px) {
+  .ar__header { grid-template-columns: 1fr; gap: 40px; }
+  .ar__track-streams { font-size: 16px; }
+}
+
+@media (max-width: 600px) {
+  .ar__track { flex-wrap: wrap; gap: 12px; }
+  .ar__track-right { width: 100%; justify-content: flex-end; }
+}

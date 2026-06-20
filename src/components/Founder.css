@@ -1,0 +1,113 @@
+.founder { background: var(--black); }
+
+.founder__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 88px;
+  align-items: start;
+}
+
+.founder__img-wrap {
+  position: relative;
+}
+
+.founder__img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(1.02) contrast(1.04) saturate(1.05);
+  transition: filter 0.6s;
+}
+.founder__img-wrap:hover .founder__img { filter: brightness(1.06) contrast(1) saturate(1.1); }
+
+.founder__img-frame {
+  position: absolute;
+  top: 16px; left: -16px;
+  right: 16px; bottom: -16px;
+  border: 1px solid rgba(200,98,42,0.32);
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.founder__img-wrap:hover .founder__img-frame {
+  top: 24px; left: -24px;
+  right: 24px; bottom: -24px;
+  border-color: rgba(200,98,42,0.65);
+  box-shadow: inset 0 0 40px rgba(200,98,42,0.08);
+}
+
+.founder__img-caption {
+  margin-top: 24px;
+  padding: 20px 24px;
+  border-left: 2px solid var(--terracotta);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.founder__img-name {
+  color: var(--white);
+  font-size: clamp(24px, 3vw, 36px);
+}
+
+.founder__img-role {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.founder__heading { color: var(--white); margin-bottom: 12px; }
+
+.founder__serif {
+  color: rgba(250,248,244,0.58);
+  font-size: clamp(20px, 2.5vw, 32px);
+  margin-bottom: 0;
+}
+
+.founder__creds {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.founder__cred {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(250,248,244,0.06);
+  transition: padding-left 0.3s ease, background 0.3s;
+  cursor: default;
+}
+.founder__cred:first-child { border-top: 1px solid rgba(250,248,244,0.06); }
+.founder__cred:hover { padding-left: 14px; background: rgba(200,98,42,0.04); }
+
+.founder__cred-n {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--terracotta);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.founder__cred-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(250,248,244,0.75);
+}
+
+@media (max-width: 900px) {
+  .founder__inner { grid-template-columns: 1fr; gap: 56px; }
+  .founder__img { aspect-ratio: 4/3; }
+}
+@media (max-width: 600px) {
+  .founder__img { aspect-ratio: 1/1; }
+  .founder__img-frame { display: none; }
+}
+

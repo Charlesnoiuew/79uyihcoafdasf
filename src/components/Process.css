@@ -1,0 +1,85 @@
+.process { background: var(--black); }
+
+.process__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 72px;
+}
+
+.process__heading { color: var(--white); margin-bottom: 12px; }
+
+.process__serif {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(250,248,244,0.58);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid rgba(250,248,244,0.06);
+  margin-bottom: 64px;
+}
+
+.process-step {
+  padding: 40px 28px;
+  border-right: 1px solid rgba(250,248,244,0.06);
+  transition: background 0.35s;
+  cursor: default;
+}
+.process-step:last-child { border-right: none; }
+.process-step:hover { background: rgba(212,175,55,0.04); }
+.process-step:hover .process-step__num { color: var(--gold); }
+.process-step:hover .process-step__title { color: var(--gold-light); }
+
+.process-step__num {
+  font-family: var(--font-display);
+  font-size: 44px;
+  color: rgba(250,248,244,0.1);
+  line-height: 1;
+  margin-bottom: 20px;
+  transition: color 0.35s;
+}
+
+.process-step__title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 10px;
+  transition: color 0.35s;
+}
+
+.process-step__desc {
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(250,248,244,0.58);
+  font-weight: 400;
+}
+
+.process__bottom { text-align: center; }
+
+@media (max-width: 1100px) {
+  .process__steps { grid-template-columns: repeat(3, 1fr); }
+  .process-step:nth-child(3) { border-right: none; }
+  .process-step:nth-child(4),
+  .process-step:nth-child(5) { border-top: 1px solid rgba(250,248,244,0.06); }
+}
+@media (max-width: 900px) {
+  .process__header { grid-template-columns: 1fr; gap: 40px; }
+  .process__steps { grid-template-columns: 1fr 1fr; }
+  .process-step:nth-child(2n) { border-right: none; }
+  .process-step:not(:nth-child(1)):not(:nth-child(2)) { border-top: 1px solid rgba(250,248,244,0.06); }
+  .process-step:nth-child(3) { border-right: 1px solid rgba(250,248,244,0.06); }
+}
+@media (max-width: 600px) {
+  .process__steps { grid-template-columns: 1fr; }
+  .process-step { border-right: none !important; border-bottom: 1px solid rgba(250,248,244,0.06); }
+  .process-step:last-child { border-bottom: none; }
+  .process-step:not(:nth-child(1)):not(:nth-child(2)) { border-top: none; }
+}
