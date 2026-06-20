@@ -34,6 +34,60 @@
   color: rgba(250,248,244,0.45);
 }
 
+/* ── Logos bar ── */
+.cs__logos-bar {
+  display: flex;
+  align-items: stretch;
+  height: 80px;
+  border-bottom: 1px solid rgba(250,248,244,0.07);
+  overflow: hidden;
+}
+
+.cs__logos-label {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-right: 1px solid rgba(250,248,244,0.07);
+  white-space: nowrap;
+}
+
+.cs__logos-crop {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+}
+
+/*
+  Source image ~830x430. Logo row sits at ~30–56% of height.
+  At height:320px → logos row is at ~96–179px.
+  Shift top by -96px to align logos into the 80px strip.
+*/
+.cs__logos-img {
+  position: absolute;
+  height: 320px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -96px;
+  pointer-events: none;
+  user-select: none;
+  filter: brightness(1.05);
+}
+
+@media (max-width: 768px) {
+  .cs__logos-bar { height: 64px; }
+  .cs__logos-label { padding: 0 16px; font-size: 7px; }
+  .cs__logos-img { height: 240px; top: -72px; }
+}
+
 /* ── List ── */
 .cs__list { display: flex; flex-direction: column; }
 

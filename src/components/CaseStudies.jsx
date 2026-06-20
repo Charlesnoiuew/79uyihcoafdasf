@@ -144,6 +144,17 @@ export default function CaseStudies() {
           </div>
         </div>
 
+        <div className="cs__logos-bar">
+          <span className="cs__logos-label">Worked With</span>
+          <div className="cs__logos-crop">
+            <img
+              src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
+              alt="Companies worked with"
+              className="cs__logos-img"
+            />
+          </div>
+        </div>
+
         <div className="cs__list">
           {cases.map((c, i) => (
             <CaseRow
