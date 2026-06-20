@@ -13,16 +13,16 @@ export default function About() {
             <span className="section-tag">Who We Are</span>
 
             <h2 className="about__heading display-xl">
-              WHO<br />WE ARE
+              WHO WE ARE
             </h2>
 
-            <p className="about__serif serif-lg">
+            <p className="about__boutique">Boutique Music Company</p>
+
+            <p className="about__serif serif-lg" style={{ marginTop: 32 }}>
               A boutique music company<br /><em>built on instinct.</em>
             </p>
-          </div>
 
-          <div className={`about__right animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-            <div className="about__rule" />
+            <div className="about__rule" style={{ marginTop: 36 }} />
             <p className="body-text" style={{ marginBottom: 28 }}>
               Versatile in capability, Dream In Color is an artist development company that bridges creative vision with strategic execution. We specialize in transforming raw ideas into fully formed campaigns spanning singles, albums, visuals, performances, and tours.
             </p>
@@ -34,13 +34,28 @@ export default function About() {
               <strong style={{ color: 'var(--white)', fontWeight: 700 }}>We elevate it.</strong>
             </p>
 
-            <div className="about__pillars">
+            <div className="about__pillars" style={{ marginTop: 48 }}>
               {['Music', 'Management', 'Marketing'].map((p, i) => (
                 <div key={p} className={`about__pillar animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: `${0.52 + i * 0.1}s` }}>
                   <span className="about__pillar-n">{String(i + 1).padStart(2,'0')}</span>
                   <span className="about__pillar-name">{p}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className={`about__right animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
+            <div className="about__phone-graphic">
+              <img
+                src="/images/image.png"
+                alt="3M Streams"
+                className="about__phone-img"
+                onError={e => { e.currentTarget.style.display = 'none' }}
+              />
+              <div className="about__phone-overlay">
+                <span className="about__phone-stat">3M</span>
+                <span className="about__phone-stat-label">Streams</span>
+              </div>
             </div>
           </div>
 

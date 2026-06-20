@@ -5,8 +5,9 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Case Studies', href: '#case-studies' },
+  { label: 'Archive', href: '#ar' },
   { label: 'Founder', href: '#founder' },
-  { label: 'Connect', href: '#contact' },
+  { label: 'Connect', href: 'mailto:Vibes@DreamInColor.com' },
 ]
 
 export default function Nav() {
