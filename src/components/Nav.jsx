@@ -6,7 +6,7 @@ const links = [
   { label: 'Services', href: '#services' },
   { label: 'Case Studies', href: '#case-studies' },
   { label: 'Founder', href: '#founder' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Connect', href: '#contact' },
 ]
 
 export default function Nav() {
@@ -22,6 +22,7 @@ export default function Nav() {
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <a href="#hero" className="nav__logo">
+        <img src="/images/diclogo.png" alt="Dream In Color Entertainment" className="nav__logo-img" />
         <div className="nav__logo-text">
           <span className="nav__logo-main">DREAM IN COLOR</span>
           <span className="nav__logo-sub">ENTERTAINMENT</span>
@@ -36,11 +37,6 @@ export default function Nav() {
             </a>
           </li>
         ))}
-        <li>
-          <a href="#contact" className="nav__cta" onClick={() => setOpen(false)}>
-            Let's Work
-          </a>
-        </li>
       </ul>
 
       <button className={`nav__burger ${open ? 'nav__burger--open' : ''}`} onClick={() => setOpen(o => !o)} aria-label="Menu">

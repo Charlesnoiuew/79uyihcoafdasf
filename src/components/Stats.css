@@ -66,6 +66,22 @@
   opacity: 1;
   filter: blur(0);
 }
+.stat-block__prefix {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 46px);
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0;
+  transform: translateX(6px);
+  transition:
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--stagger, 0s) + 0.25s);
+}
+.stats-section__col.visible .stat-block__prefix {
+  opacity: 1;
+  transform: translateX(0);
+}
 .stat-block__suffix {
   font-family: var(--font-display);
   font-size: clamp(28px, 3vw, 46px);

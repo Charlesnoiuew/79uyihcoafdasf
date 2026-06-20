@@ -2,10 +2,10 @@ import { useInView, useCounter } from '../hooks'
 import './Stats.css'
 
 const stats = [
-  { value: 500, suffix: 'M+', label: 'Streams Generated', desc: 'Across managed projects' },
-  { value: 100, suffix: 'K+', label: 'Songs Released Daily', desc: 'The noise we cut through' },
   { value: 10, suffix: '+', label: 'Years Experience', desc: 'Across every music vertical' },
-  { value: 2, suffix: '×', label: 'Platinum Records', desc: 'RIAA certified releases' },
+  { value: 20, suffix: '+', label: 'Gold & Platinum Records', desc: 'RIAA certified releases' },
+  { value: 500, prefix: '$', suffix: 'K+', label: 'Revenue Generated for Clients', desc: 'Across managed projects' },
+  { value: 1, suffix: 'B+', label: 'Streams Generated', desc: 'Across managed projects' },
 ]
 
 function StatBlock({ stat, inView, delay }) {
@@ -15,6 +15,7 @@ function StatBlock({ stat, inView, delay }) {
     <div className="stat-block" style={{ '--stagger': `${delay}s` }}>
       <div className="stat-block__bar" />
       <div className="stat-block__num">
+        {stat.prefix && <span className="stat-block__prefix">{stat.prefix}</span>}
         <span className="stat-block__count">{count}</span>
         <span className="stat-block__suffix">{stat.suffix}</span>
       </div>
