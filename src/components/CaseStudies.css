@@ -97,6 +97,12 @@
 
 .cs__logo:hover .cs__logo-img { opacity: 1; }
 
+.cs__logo-img--dark-bg {
+  filter: none;
+  border-radius: 4px;
+  height: 40px;
+}
+
 @media (max-width: 768px) {
   .cs__logos-bar { height: 60px; }
   .cs__logos-label { padding: 0 16px; font-size: 7px; }
