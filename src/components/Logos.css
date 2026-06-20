@@ -26,7 +26,8 @@
 
 /* Crop window — pans to the logos row from the source deck image */
 .logos-strip__crop {
-  flex: 1;
+  flex: 0 1 auto;
+  min-width: 0;
   overflow: hidden;
   position: relative;
   mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
@@ -40,12 +41,10 @@
   We then shift up by 96px to clip to the logos, centering them in the 88px strip.
 */
 .logos-strip__img {
-  position: absolute;
+  display: block;
   height: 320px;
   width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  top: calc(-96px + (88px - 83px) / 2);
+  margin-top: calc(-96px + (88px - 83px) / 2);
   filter: brightness(1.05) contrast(1.0);
   pointer-events: none;
   user-select: none;
