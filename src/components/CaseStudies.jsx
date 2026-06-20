@@ -19,7 +19,7 @@ const cases = [
       'Ensured fulfillment of all artists contractual obligations',
     ],
     highlights: ['Spotify Radar Artist of the Year', 'BET Hip Hop Awards Rap Cypher', 'Billboard Rookie of the Month', 'Rolling Loud Presents #StillSleepTour'],
-    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025 copy.png',
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025_copy-removebg-preview.png',
   },
   {
     name: 'Sheff G',
@@ -266,21 +266,18 @@ function CaseRow({ c, index, isOpen, onToggle }) {
                 </ul>
               </div>
               <div className="cs-row__detail-block">
-                <h4 className="cs-row__detail-title cs-row__detail-title--gold">Highlights</h4>
-                <ul className="cs-row__detail-list cs-row__detail-list--gold">
-                  {c.highlights.map((h, i) => <li key={i}>{h}</li>)}
-                </ul>
-              </div>
-              {c.highlightImage && (
-                <div className="cs-row__detail-block">
-                  <h4 className="cs-row__detail-title cs-row__detail-title--gold">Featured</h4>
+                {c.highlightImage && (
                   <img
                     src={c.highlightImage}
                     alt={`${c.name} highlights`}
                     className="cs-row__highlight-img"
                   />
-                </div>
-              )}
+                )}
+                <h4 className="cs-row__detail-title cs-row__detail-title--gold" style={{ marginTop: c.highlightImage ? 16 : 0 }}>Highlights</h4>
+                <ul className="cs-row__detail-list cs-row__detail-list--gold">
+                  {c.highlights.map((h, i) => <li key={i}>{h}</li>)}
+                </ul>
+              </div>
             </div>
 
         </div>
