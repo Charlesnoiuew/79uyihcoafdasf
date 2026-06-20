@@ -19,13 +19,13 @@ export default function App() {
         <Nav />
         <main>
           <Hero />
-          <Logos />
           <Stats />
           <About />
           <Services />
           <WhyUs />
           <Statement />
           <CaseStudies />
+          <Logos />
           <ARSection />
           <Process />
           <Founder />
