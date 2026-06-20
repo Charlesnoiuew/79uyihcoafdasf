@@ -4,8 +4,8 @@
   border-bottom: 1px solid rgba(250,248,244,0.07);
   display: flex;
   align-items: stretch;
-  overflow: hidden;
   height: 88px;
+  overflow: visible;
 }
 
 .logos-strip__label {
@@ -24,9 +24,8 @@
   z-index: 1;
 }
 
-/* Crop window — pans to the logos row from the source deck image */
 .logos-strip__crop {
-  flex: 0 1 auto;
+  flex: 1 1 0;
   min-width: 0;
   overflow: hidden;
   position: relative;
@@ -34,17 +33,13 @@
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
 }
 
-/*
-  Source image is ~830x430.
-  Logo row is roughly at 30–56% of image height → y ≈ 129–241px in source.
-  We scale the image to 320px tall so the logos band occupies ~96–179px.
-  We then shift up by 96px to clip to the logos, centering them in the 88px strip.
-*/
 .logos-strip__img {
-  display: block;
+  position: absolute;
   height: 320px;
   width: auto;
-  margin-top: calc(-96px + (88px - 83px) / 2);
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(-96px + (88px - 83px) / 2);
   filter: brightness(1.05) contrast(1.0);
   pointer-events: none;
   user-select: none;
@@ -60,13 +55,14 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  padding: 0 28px;
+  padding: 0 24px;
   border-left: 1px solid rgba(250,248,244,0.07);
 }
 
 .logos-strip__extra-img {
-  height: 44px;
+  height: 40px;
   width: auto;
+  max-width: 120px;
   object-fit: contain;
   border-radius: 4px;
   pointer-events: none;
