@@ -150,6 +150,9 @@ export default function CaseStudies() {
             <span className="cs__logo">
               <img src="/images/png-transparent-atlantic-records-hd-logo.png" alt="Atlantic Records" className="cs__logo-img" />
             </span>
+            <span className="cs__logo">
+              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="United Masters" className="cs__logo-img" />
+            </span>
           </div>
         </div>
 
