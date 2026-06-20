@@ -193,38 +193,24 @@ function CaseRow({ c, index, isOpen, onToggle }) {
     <div
       ref={ref}
       className={`cs-row ${isOpen ? 'cs-row--open' : ''} animate-on-scroll ${inView ? 'visible' : ''}`}
-      style={{ transitionDelay: `${index * 0.05}s`, gridColumn: isOpen ? '1 / -1' : undefined }}
+      style={{ transitionDelay: `${index * 0.05}s` }}
     >
       <button className="cs-row__trigger" onClick={onToggle}>
-        <div
-          className="cs-row__card-bg"
-          style={{ backgroundImage: `url(${c.image})`, backgroundSize: c.imgFit === 'contain' ? 'contain' : 'cover', backgroundColor: c.imgBg || 'var(--charcoal)' }}
-        />
-        <div className="cs-row__card-overlay" />
+        <span className="cs-row__idx">{String(index + 1).padStart(2, '0')}</span>
 
-        <div className="cs-row__card-top">
-          <span className="cs-row__idx">{String(index + 1).padStart(2, '0')}</span>
-          <span className={`cs-row__toggle ${isOpen ? 'cs-row__toggle--open' : ''}`}>
-            <span className="cs-row__toggle-bar" />
-            <span className="cs-row__toggle-bar cs-row__toggle-bar--v" />
-          </span>
-        </div>
+        <span className="cs-row__thumb-wrap">
+          <img src={c.image} alt={c.name} className="cs-row__thumb" style={c.imgFit ? { objectFit: c.imgFit, background: c.imgBg } : undefined} />
+        </span>
 
-        <div className="cs-row__card-bottom">
-          {c.logos && c.logos.length > 0 && (
-            <div className="cs-row__logos cs-row__logos--card">
-              {c.logos.map(logo => (
-                <span key={logo} className="cs-row__logo-badge">{logo}</span>
-              ))}
-            </div>
-          )}
+        <span className="cs-row__info">
           <span className="cs-row__name">{c.name}</span>
-          <div className="cs-row__card-meta">
-            <span className="cs-row__role">{c.role}</span>
-            <span className="cs-row__year">{c.year}</span>
-            <span className="cs-row__stat cs-row__stat--card">{c.stat}</span>
-          </div>
-        </div>
+        </span>
+
+        <span className="cs-row__stat">{c.stat}</span>
+        <span className={`cs-row__toggle ${isOpen ? 'cs-row__toggle--open' : ''}`}>
+          <span className="cs-row__toggle-bar" />
+          <span className="cs-row__toggle-bar cs-row__toggle-bar--v" />
+        </span>
       </button>
 
       <div className="cs-row__panel">
@@ -233,13 +219,6 @@ function CaseRow({ c, index, isOpen, onToggle }) {
           <div className="cs-row__img-col" style={c.imgBg ? { background: c.imgBg } : undefined}>
             <img src={c.image} alt={c.name} className="cs-row__img" style={c.imgFit ? { objectFit: c.imgFit, height: c.imgHeight ?? undefined } : undefined} />
             <div className="cs-row__img-overlay">
-              {c.logos && c.logos.length > 0 && (
-                <div className="cs-row__logos">
-                  {c.logos.map(logo => (
-                    <span key={logo} className="cs-row__logo-badge">{logo}</span>
-                  ))}
-                </div>
-              )}
               <span className="cs-row__img-name">{c.name}</span>
               <div className="cs-row__links">
                 {c.spotify && (
