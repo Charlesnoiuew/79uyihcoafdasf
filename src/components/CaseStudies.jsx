@@ -162,6 +162,9 @@ export default function CaseStudies() {
             <span className="cs__logo">
               <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
             </span>
+            <span className="cs__logo">
+              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
+            </span>
           </div>
         </div>
 
