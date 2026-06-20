@@ -9,6 +9,9 @@ export default function Logos() {
       <div className="logos-strip__crop">
         <img src={IMG} alt="Companies worked with" className="logos-strip__img" />
       </div>
+      <div className="logos-strip__extra">
+        <img src="/images/united-masters-review-930x562-1.webp" alt="United Masters" className="logos-strip__extra-img" />
+      </div>
     </div>
   )
 }

@@ -56,3 +56,20 @@
   .logos-strip__label { padding: 0 16px; font-size: 7px; }
   .logos-strip__img { height: 250px; top: -74px; }
 }
+
+.logos-strip__extra {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  border-left: 1px solid rgba(250,248,244,0.07);
+}
+
+.logos-strip__extra-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  pointer-events: none;
+  user-select: none;
+}
