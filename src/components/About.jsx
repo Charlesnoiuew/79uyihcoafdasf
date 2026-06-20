@@ -47,8 +47,8 @@ export default function About() {
           <div className={`about__right animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
             <div className="about__phone-graphic">
               <img
-                src="/images/image.png"
-                alt="3M Streams"
+                src="/images/image-removebg-preview_(7).png"
+                alt="3M's - Music Management Marketing"
                 className="about__phone-img"
               />
             </div>
