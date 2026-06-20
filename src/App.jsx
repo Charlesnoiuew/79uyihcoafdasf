@@ -10,7 +10,6 @@ import ARSection from './components/ARSection'
 import Process from './components/Process'
 import Founder from './components/Founder'
 import Contact from './components/Contact'
-import Logos from './components/Logos'
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
           <WhyUs />
           <Statement />
           <CaseStudies />
-          <Logos />
           <ARSection />
           <Process />
           <Founder />

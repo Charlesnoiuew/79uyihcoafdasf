@@ -153,6 +153,9 @@ export default function CaseStudies() {
             <span className="cs__logo">
               <img src="/images/united-masters-review-930x562-1.webp" alt="United Masters" className="cs__logo-img cs__logo-img--dark-bg" />
             </span>
+            <span className="cs__logo">
+              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
+            </span>
           </div>
         </div>
 
