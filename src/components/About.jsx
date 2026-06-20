@@ -50,12 +50,7 @@ export default function About() {
                 src="/images/image.png"
                 alt="3M Streams"
                 className="about__phone-img"
-                onError={e => { e.currentTarget.style.display = 'none' }}
               />
-              <div className="about__phone-overlay">
-                <span className="about__phone-stat">3M</span>
-                <span className="about__phone-stat-label">Streams</span>
-              </div>
             </div>
           </div>
 
