@@ -37,16 +37,17 @@
 /* ── Logos bar ── */
 .cs__logos-bar {
   display: flex;
-  align-items: stretch;
-  height: 80px;
+  align-items: center;
+  height: 72px;
   border-bottom: 1px solid rgba(250,248,244,0.07);
-  overflow: hidden;
+  gap: 0;
 }
 
 .cs__logos-label {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  align-self: stretch;
   padding: 0 24px;
   font-size: 8px;
   font-weight: 800;
@@ -57,35 +58,38 @@
   white-space: nowrap;
 }
 
-.cs__logos-crop {
-  flex: 1;
+.cs__logos-list {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 8px;
+  flex-wrap: nowrap;
   overflow: hidden;
-  position: relative;
-  mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
 }
 
-/*
-  Source image ~830x430. Logo row sits at ~30–56% of height.
-  At height:320px → logos row is at ~96–179px.
-  Shift top by -96px to align logos into the 80px strip.
-*/
-.cs__logos-img {
-  position: absolute;
-  height: 320px;
-  width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -96px;
-  pointer-events: none;
-  user-select: none;
-  filter: brightness(1.05);
+.cs__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 28px;
+  border-right: 1px solid rgba(250,248,244,0.07);
+  height: 72px;
+  color: rgba(250,248,244,0.75);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  cursor: default;
 }
+
+.cs__logo:first-child { padding-left: 32px; }
+.cs__logo:hover { color: var(--white); }
 
 @media (max-width: 768px) {
-  .cs__logos-bar { height: 64px; }
+  .cs__logos-bar { height: 60px; }
   .cs__logos-label { padding: 0 16px; font-size: 7px; }
-  .cs__logos-img { height: 240px; top: -72px; }
+  .cs__logo { height: 60px; padding: 0 20px; font-size: 12px; }
 }
 
 /* ── List ── */

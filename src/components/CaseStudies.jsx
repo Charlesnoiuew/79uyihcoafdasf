@@ -146,12 +146,11 @@ export default function CaseStudies() {
 
         <div className="cs__logos-bar">
           <span className="cs__logos-label">Worked With</span>
-          <div className="cs__logos-crop">
-            <img
-              src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png"
-              alt="Companies worked with"
-              className="cs__logos-img"
-            />
+          <div className="cs__logos-list">
+            <span className="cs__logo cs__logo--atlantic">
+              <AtlanticIcon />
+              <span>Atlantic Records</span>
+            </span>
           </div>
         </div>
 
@@ -248,6 +247,19 @@ function CaseRow({ c, index, isOpen, onToggle }) {
         </div>
       </div>
     </div>
+  )
+}
+
+function AtlanticIcon() {
+  return (
+    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" fill="#E8371B"/>
+      <rect x="0" y="0" width="50" height="50" fill="#E8371B"/>
+      <rect x="50" y="50" width="50" height="50" fill="#E8371B"/>
+      <rect x="50" y="0" width="50" height="50" fill="#1C1C1C"/>
+      <rect x="0" y="50" width="50" height="50" fill="#1C1C1C"/>
+      <text x="50" y="62" textAnchor="middle" fill="white" fontSize="28" fontWeight="900" fontFamily="Arial Black, sans-serif">A</text>
+    </svg>
   )
 }
 
