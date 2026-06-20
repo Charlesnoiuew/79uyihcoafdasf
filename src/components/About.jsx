@@ -58,10 +58,8 @@ export default function About() {
 
         <div className={`about__quote-band animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.42s' }}>
           <p className="about__quote serif-xl">
-            "Over 100k songs are released daily.<br />
-            It takes <em>vision</em> to cut through."
+            "Over 100k songs are released daily. It takes <em>vision</em> to cut through."
           </p>
-          <span className="about__quote-attr">— Claudia Rezir</span>
         </div>
 
       </div>

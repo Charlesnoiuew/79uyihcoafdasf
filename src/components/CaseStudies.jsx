@@ -9,6 +9,7 @@ const cases = [
     stat: 'Spotify Radar AOTY',
     year: '2020–2022',
     image: '/images/image copy copy copy.png',
+    logos: ['Interscope Records', 'Deadzone'],
     spotify: 'https://open.spotify.com/artist/6EPlBSH2RSiettczlz7ihV',
     instagram: 'https://www.instagram.com/_sleepyhallow_/',
     bullets: [
@@ -25,6 +26,7 @@ const cases = [
     stat: '10M Video Views',
     year: '2019–2021',
     image: '/images/image copy copy copy copy copy.png',
+    logos: ['EMPIRE'],
     spotify: 'https://open.spotify.com/artist/1tG7s7S4sq2eFFW0QZyLbm',
     instagram: 'https://www.instagram.com/sheff_g/',
     bullets: [
@@ -42,6 +44,7 @@ const cases = [
     stat: '2× RIAA Platinum',
     year: '2018–2020',
     image: '/images/image copy copy copy copy copy copy copy.png',
+    logos: ['Quality Control', 'Republic Records'],
     imgFit: 'contain',
     imgBg: '#111',
     imgHeight: 280,
@@ -62,6 +65,7 @@ const cases = [
     stat: 'Seinfeld Campaign',
     year: '2015–2016',
     image: '/images/6dce8b374a493bff0baeadc0810b8e7c.jpg',
+    logos: ['Maybach Music', 'Atlantic Records'],
     spotify: 'https://open.spotify.com/artist/67nwj3Y5sZQLl72VNUHEYE',
     instagram: 'https://www.instagram.com/wale/',
     bullets: [
@@ -79,6 +83,7 @@ const cases = [
     stat: '2 Album Cycles',
     year: '2015–2018',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    logos: ['Atlantic Records', 'Republic Records'],
     spotify: 'https://open.spotify.com/artist/20sxb77xiYeusSH8cVdatc',
     instagram: 'https://www.instagram.com/meekmill/',
     bullets: [
@@ -95,6 +100,7 @@ const cases = [
     stat: 'Republic Records',
     year: '2017–2018',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    logos: ['Republic Records'],
     spotify: 'https://open.spotify.com/artist/1VrLYaVFEBnWnNFrRNLiAo',
     instagram: 'https://www.instagram.com/nolimitherbo/',
     bullets: [
@@ -117,15 +123,15 @@ export default function CaseStudies() {
 
         <div className="cs__header" ref={ref}>
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
-            <span className="section-tag">Selected Work</span>
+            <span className="section-tag">Case Studies</span>
             <h2 className="cs__heading display-xl">
-              SELECTED<br />WORK
+              CASE STUDIES
             </h2>
             <p className="cs__sub serif-lg"><em>A decade of results.</em></p>
           </div>
           <div className={`cs__meta animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.15s' }}>
             <div className="cs__meta-stats">
-              {[['6', 'Projects'], ['3', 'Disciplines'], ['10+', 'Years']].map(([n, l]) => (
+              {[['50+', 'Projects'], ['10+', 'Years'], ['3', 'Disciplines']].map(([n, l]) => (
                 <div key={l} className="cs__meta-stat">
                   <span className="cs__meta-n">{n}</span>
                   <span className="cs__meta-l">{l}</span>
@@ -133,7 +139,7 @@ export default function CaseStudies() {
               ))}
             </div>
             <p className="body-text" style={{ marginTop: 28, maxWidth: 380 }}>
-              Work spanning artist management, record label marketing, and streaming across major label and independent contexts.
+              Work spanning artist marketing, management, and streaming strategy across major label and independent contexts.
             </p>
           </div>
         </div>
@@ -188,6 +194,13 @@ function CaseRow({ c, index, isOpen, onToggle }) {
           <div className="cs-row__img-col" style={c.imgBg ? { background: c.imgBg } : undefined}>
             <img src={c.image} alt={c.name} className="cs-row__img" style={c.imgFit ? { objectFit: c.imgFit, height: c.imgHeight ?? undefined } : undefined} />
             <div className="cs-row__img-overlay">
+              {c.logos && c.logos.length > 0 && (
+                <div className="cs-row__logos">
+                  {c.logos.map(logo => (
+                    <span key={logo} className="cs-row__logo-badge">{logo}</span>
+                  ))}
+                </div>
+              )}
               <span className="cs-row__img-name">{c.name}</span>
               <div className="cs-row__links">
                 {c.spotify && (

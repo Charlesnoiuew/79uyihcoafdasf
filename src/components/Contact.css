@@ -58,7 +58,14 @@
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  margin-bottom: 16px;
+  margin-bottom: 0;
+}
+
+.contact__hero-title {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .contact__hero-serif {
@@ -66,6 +73,7 @@
   font-size: clamp(32px, 4vw, 56px);
   font-weight: 300;
   color: var(--gold);
+  margin-bottom: 0;
 }
 
 /* Contact info stack */

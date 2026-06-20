@@ -31,7 +31,7 @@ export default function Process() {
           {steps.map((s, i) => <ProcessStep key={s.num} step={s} index={i} />)}
         </div>
         <div className="process__bottom">
-          <a href="#contact" className="btn-primary">Start the Conversation</a>
+          <a href="mailto:Vibes@DreamInColor.com" className="btn-primary">Start the Conversation</a>
         </div>
       </div>
     </section>

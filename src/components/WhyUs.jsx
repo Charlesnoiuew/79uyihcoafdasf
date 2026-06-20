@@ -61,12 +61,14 @@ export default function WhyUs() {
           </div>
 
           <div className={`why-us__core animate-on-scroll scale ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.35s' }}>
-            <div className="why-us__core-ring" />
-            <div className="why-us__core-ring why-us__core-ring--outer" />
-            <div className="why-us__core-inner">
-              <span className="why-us__core-word">ARTIST</span>
-              <span className="why-us__core-divider" />
-              <span className="why-us__core-sub">at the center</span>
+            <div className="why-us__venn-diagram">
+              <div className="why-us__venn-l" />
+              <div className="why-us__venn-r" />
+              <div className="why-us__venn-inner">
+                <span className="why-us__core-word">DIC</span>
+                <span className="why-us__core-divider" />
+                <span className="why-us__core-sub">at the center</span>
+              </div>
             </div>
           </div>
 
@@ -85,8 +87,7 @@ export default function WhyUs() {
 
         <div className={`why-us__offerings animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
           <div className="why-us__offerings-header">
-            <h4 className="why-us__offerings-title">Full-Service Includes</h4>
-            <span className="why-us__offerings-count">06 Capabilities</span>
+            <h4 className="why-us__offerings-title">Services Include</h4>
           </div>
           <div className="why-us__offerings-grid">
             {offerings.map((o, i) => (

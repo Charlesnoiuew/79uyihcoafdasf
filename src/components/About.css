@@ -163,24 +163,13 @@
   border-top: 1px solid rgba(250,248,244,0.06);
   padding: 64px 0 0;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
+  justify-content: center;
 }
 
 .about__quote {
   color: var(--white);
-  max-width: 800px;
-}
-
-.about__quote-attr {
-  font-family: var(--font-serif);
-  font-size: 17px;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--gold);
-  white-space: nowrap;
-  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -188,7 +177,6 @@
   .about__heading { white-space: normal; }
   .about__phone-graphic { max-width: 240px; }
   .about__photo-grid { grid-template-columns: repeat(2, 1fr); }
-  .about__quote-band { flex-direction: column; align-items: flex-start; gap: 20px; }
 }
 
 @media (max-width: 600px) {

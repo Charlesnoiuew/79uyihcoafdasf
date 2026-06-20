@@ -28,7 +28,7 @@ export default function Services() {
             <p className="services__intro-serif serif-lg">
               Everything, <em>mostly.</em>
             </p>
-            <p className="body-text services__deck">
+            <p className="body-text services__deck" style={{ color: 'var(--gold)' }}>
               We operate across every function of the music industry—knowing when to lead with strategy and when to lean into instinct.
             </p>
           </div>
@@ -56,7 +56,6 @@ function ServiceRow({ service, index }) {
       <span className="svc-row__num">{service.num}</span>
       <h3 className="svc-row__title">{service.title}</h3>
       <span className="svc-row__aside">{service.aside}</span>
-      <span className="svc-row__arr">→</span>
     </div>
   )
 }

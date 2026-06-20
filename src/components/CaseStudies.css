@@ -223,7 +223,26 @@
   letter-spacing: 0.04em;
 }
 
-.cs-row__img-overlay { flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 12px; }
+.cs-row__img-overlay { flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 10px; }
+
+.cs-row__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.cs-row__logo-badge {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--gold);
+  padding: 4px 10px;
+  border-radius: 2px;
+  line-height: 1.2;
+}
 
 .cs-row__links {
   display: flex;

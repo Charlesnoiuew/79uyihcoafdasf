@@ -34,7 +34,7 @@ export default function Founder() {
           <div className={`founder__content animate-on-scroll from-right ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
             <span className="section-tag">The Founder</span>
             <h2 className="founder__heading display-xl">
-              MEET<br />CLAUDIA
+              MEET CLAUDIA
             </h2>
             <p className="founder__serif serif-lg">
               <em>A decade building artists.</em>

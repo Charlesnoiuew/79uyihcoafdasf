@@ -24,8 +24,10 @@ export default function ARSection() {
         <div className="ar__header" ref={ref}>
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
             <span className="section-tag">A&R Work</span>
-            <h2 className="ar__heading">A&R'D</h2>
-            <p className="ar__heading-script">by Claudia Rezir.</p>
+            <div className="ar__heading-wrap">
+              <h2 className="ar__heading">A&R'D</h2>
+              <p className="ar__heading-script">by Claudia Rezir</p>
+            </div>
           </div>
           <div className={`ar__header-text animate-on-scroll from-right ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
             <p className="body-text">

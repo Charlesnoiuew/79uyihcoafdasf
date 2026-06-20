@@ -1,18 +1,8 @@
-import { useState } from 'react'
 import { useInView } from '../hooks'
 import './Contact.css'
 
-const types = ['Artist', 'Manager', 'Label', 'Brand', 'Other']
-
 export default function Contact() {
   const [heroRef, heroInView] = useInView()
-  const [formRef, formInView] = useInView()
-  const [form, setForm] = useState({ name: '', email: '', type: '', message: '' })
-  const [sent, setSent] = useState(false)
-  const [focused, setFocused] = useState(null)
-
-  const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = e => { e.preventDefault(); setSent(true) }
 
   return (
     <section id="contact" className="contact">
@@ -26,12 +16,10 @@ export default function Contact() {
         <div className="container contact__hero-inner">
           <div className={`contact__hero-left animate-on-scroll from-left ${heroInView ? 'visible' : ''}`}>
             <span className="section-tag">Let's Work</span>
-            <h2 className="contact__hero-heading">
-              LET'S<br />WORK
-            </h2>
-            <p className="contact__hero-serif">
-              <em>together.</em>
-            </p>
+            <div className="contact__hero-title">
+              <h2 className="contact__hero-heading">LET'S WORK</h2>
+              <p className="contact__hero-serif"><em>together.</em></p>
+            </div>
           </div>
 
           <div className={`contact__hero-right animate-on-scroll from-right ${heroInView ? 'visible' : ''}`} style={{ transitionDelay: '0.18s' }}>
@@ -41,86 +29,14 @@ export default function Contact() {
             </p>
 
             <div className="contact__info-stack">
-              <ContactInfo icon="P" label="Phone" value="(347) 525-5451" href="tel:3475255451" />
-              <ContactInfo icon="E" label="Email" value="claudia@dreamincolor.com" href="mailto:claudia@dreamincolor.com" />
-            </div>
-          </div>
-        </div>
-
-        <div className="contact__hero-scroll-hint">
-          <span className="contact__scroll-line" />
-          <span className="contact__scroll-label">Send a message</span>
-        </div>
-      </div>
-
-      {/* ── Form panel ── */}
-      <div className="contact__form-section" ref={formRef}>
-        <div className="container">
-          <div className={`contact__form-header animate-on-scroll ${formInView ? 'visible' : ''}`}>
-            <h3 className="contact__form-title">Start the Conversation</h3>
-            <span className="contact__form-tag">Response within 48 hrs</span>
-          </div>
-
-          {sent ? (
-            <div className="contact__success">
-              <div className="contact__success-ring">
-                <span className="contact__success-check">✓</span>
-              </div>
-              <h3 className="contact__success-heading">Message Received.</h3>
-              <p className="contact__success-sub">We'll be in touch to schedule the vibe check.</p>
-            </div>
-          ) : (
-            <form
-              className={`contact__form animate-on-scroll ${formInView ? 'visible' : ''}`}
-              style={{ transitionDelay: '0.12s' }}
-              onSubmit={handleSubmit}
-            >
-              <div className="contact__row">
-                <Field
-                  name="name" label="Your Name" type="text"
-                  value={form.name} onChange={handleChange}
-                  focused={focused} setFocused={setFocused}
-                  required
-                />
-                <Field
-                  name="email" label="Email Address" type="email"
-                  value={form.email} onChange={handleChange}
-                  focused={focused} setFocused={setFocused}
-                  required
-                />
-              </div>
-
-              <div className="contact__type-row">
-                <span className="contact__type-label">I am a:</span>
-                <div className="contact__type-btns">
-                  {types.map(t => (
-                    <button
-                      key={t} type="button"
-                      className={`contact__type-btn ${form.type === t ? 'contact__type-btn--active' : ''}`}
-                      onClick={() => setForm(f => ({ ...f, type: t }))}
-                    >
-                      {t}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <Field
-                name="message" label="Tell us about your goals" type="textarea"
-                value={form.message} onChange={handleChange}
-                focused={focused} setFocused={setFocused}
-                required
+              <ContactInfo
+                icon={<EnvelopeIcon />}
+                label="Email"
+                value="Vibes@DreamInColor.com"
+                href="mailto:Vibes@DreamInColor.com"
               />
-
-              <div className="contact__form-footer">
-                <button type="submit" className="contact__submit">
-                  <span>Send Message</span>
-                  <span className="contact__submit-arrow">→</span>
-                </button>
-                <p className="contact__disclaimer">We respond to every message within 48 hours.</p>
-              </div>
-            </form>
-          )}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -154,27 +70,12 @@ export default function Contact() {
   )
 }
 
-function Field({ name, label, type, value, onChange, focused, setFocused, required }) {
-  const isUp = focused === name || value
+function EnvelopeIcon() {
   return (
-    <div className={`contact__field ${type === 'textarea' ? 'contact__field--full' : ''}`}>
-      <label className={`contact__label ${isUp ? 'contact__label--up' : ''}`}>{label}</label>
-      {type === 'textarea' ? (
-        <textarea
-          name={name} value={value} onChange={onChange} rows={5}
-          className="contact__input contact__textarea"
-          onFocus={() => setFocused(name)} onBlur={() => setFocused(null)}
-          required={required}
-        />
-      ) : (
-        <input
-          type={type} name={name} value={value} onChange={onChange}
-          className="contact__input"
-          onFocus={() => setFocused(name)} onBlur={() => setFocused(null)}
-          required={required}
-        />
-      )}
-    </div>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M2 7l10 7 10-7"/>
+    </svg>
   )
 }
 

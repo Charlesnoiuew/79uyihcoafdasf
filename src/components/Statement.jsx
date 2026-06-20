@@ -9,13 +9,9 @@ export default function Statement() {
     <section className="statement" ref={ref}>
       <div className="statement__inner">
 
-        <div className={`statement__top animate-on-scroll ${v}`}>
-          <span className="statement__kicker">— Claudia Rezir, Founder</span>
-        </div>
-
         <div className="statement__quote-wrap">
           <p className={`statement__q serif-xl animate-on-scroll ${v}`} style={{ transitionDelay: '0.14s' }}>
-            "We don't just get the<br />job done—
+            "We Don't Just Get The Job Done—
           </p>
           <p className={`statement__q statement__q--display display-xl animate-on-scroll ${v}`} style={{ transitionDelay: '0.28s' }}>
             WE ELEVATE IT."
@@ -24,7 +20,7 @@ export default function Statement() {
 
         <div className={`statement__bottom animate-on-scroll ${v}`} style={{ transitionDelay: '0.44s' }}>
           <span className="statement__co">Dream In Color Entertainment</span>
-          <span className="statement__year">Dream In Color</span>
+          <span className="statement__kicker">— Claudia Rezir, Founder</span>
         </div>
 
       </div>

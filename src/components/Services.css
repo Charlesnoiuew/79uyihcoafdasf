@@ -24,7 +24,7 @@
 
 .svc-row {
   display: grid;
-  grid-template-columns: 64px 1fr auto 28px;
+  grid-template-columns: 64px 1fr auto;
   align-items: center;
   gap: 32px;
   padding: 28px 0;
