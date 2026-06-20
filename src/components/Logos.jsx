@@ -3,6 +3,7 @@ import './Logos.css'
 const logos = [
   { src: '/images/png-transparent-atlantic-records-hd-logo.png', alt: 'Atlantic Records' },
   { src: '/images/united-masters-review-930x562-1.webp', alt: 'United Masters', invert: true },
+  { src: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png', alt: 'Partner Logo' },
   { src: '/images/Dream-Chasers-Records-Logo.jpg', alt: 'Dream Chasers Records', invert: true },
 ]
 
