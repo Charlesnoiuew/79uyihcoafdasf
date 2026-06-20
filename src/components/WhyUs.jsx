@@ -1,15 +1,32 @@
 import { useInView } from '../hooks'
 import './WhyUs.css'
 
-const labelSide = [
-  'A&R + A&R Admin', 'Marketing', 'Digital', 'Streaming',
-  'Publicity', 'Creative', 'Radio', 'International',
-  'Business Affairs', 'Finance',
+const labelItems = [
+  'A&R + A&R Admin',
+  'Marketing',
+  'Digital',
+  'Streaming',
+  'Publicity',
+  'Creative',
+  'Radio',
+  'International',
+  'Business Affairs',
+  'Finance',
 ]
-const managerSide = [
-  'Producer(s)', 'Engineer', 'Attorney', 'Publisher',
-  'Tour Manager', 'Booking Agent', 'Accountant',
-  'Business Manager', 'Brands', 'Creative',
+
+const managerItems = [
+  'Producer(s)',
+  'Engineer',
+  'Attorney',
+  'Publisher',
+  'Tour Manager',
+  'Booking Agent',
+  'Accountant',
+  'Business Manager',
+  'Brands',
+  'Creative (Photo, Video)',
+  'Graphic Designer, Merch',
+  'Social Media Manager',
 ]
 
 const offerings = [
@@ -47,41 +64,43 @@ export default function WhyUs() {
           </div>
         </div>
 
-        <div className="why-us__orbit">
-          <div className={`why-us__side why-us__side--left animate-on-scroll from-left ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.22s' }}>
-            <h4 className="why-us__side-title">Label Side</h4>
-            <ul className="why-us__role-list">
-              {labelSide.map(r => (
-                <li key={r} className="why-us__role-item">
-                  <span className="why-us__role-dot" />
-                  <span className="why-us__role-text">{r}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* ── Venn Diagram ── */}
+        <div className={`why-us__venn animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.25s' }}>
 
-          <div className={`why-us__core animate-on-scroll scale ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.35s' }}>
-            <div className="why-us__venn-diagram">
-              <div className="why-us__venn-l" />
-              <div className="why-us__venn-r" />
-              <div className="why-us__venn-inner">
-                <span className="why-us__core-word">DIC</span>
-                <span className="why-us__core-divider" />
-                <span className="why-us__core-sub">at the center</span>
-              </div>
+          {/* SVG circles — purely decorative */}
+          <svg className="why-us__venn-svg" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet" aria-hidden>
+            <circle cx="270" cy="210" r="200" stroke="white" strokeWidth="2" fill="transparent" />
+            <circle cx="530" cy="210" r="200" stroke="white" strokeWidth="2" fill="transparent" />
+          </svg>
+
+          {/* Text layout over circles */}
+          <div className="why-us__venn-body">
+
+            {/* Left — Label */}
+            <div className="why-us__venn-col why-us__venn-col--left">
+              <h4 className="why-us__venn-title">Label</h4>
+              <ul className="why-us__venn-list">
+                {labelItems.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
-          </div>
 
-          <div className={`why-us__side why-us__side--right animate-on-scroll from-right ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.22s' }}>
-            <h4 className="why-us__side-title">Manager Side</h4>
-            <ul className="why-us__role-list">
-              {managerSide.map(r => (
-                <li key={r} className="why-us__role-item">
-                  <span className="why-us__role-dot" />
-                  <span className="why-us__role-text">{r}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Center — Artist */}
+            <div className="why-us__venn-col why-us__venn-col--center">
+              <span className="why-us__venn-artist">ARTIST</span>
+            </div>
+
+            {/* Right — Manager */}
+            <div className="why-us__venn-col why-us__venn-col--right">
+              <h4 className="why-us__venn-title">Manager</h4>
+              <ul className="why-us__venn-list">
+                {managerItems.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
           </div>
         </div>
 

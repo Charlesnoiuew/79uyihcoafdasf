@@ -23,157 +23,77 @@
 
 .why-us__sub em { color: var(--gold); }
 
-/* ── Orbit ── */
-.why-us__orbit {
-  display: grid;
-  grid-template-columns: 1fr 280px 1fr;
-  gap: 0;
-  align-items: start;
+/* ── Venn Diagram ── */
+.why-us__venn {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 800 / 420;
   margin-bottom: 80px;
-  border: 1px solid rgba(250,248,244,0.06);
 }
 
-/* Sides */
-.why-us__side {
-  padding: 48px 40px;
+.why-us__venn-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.why-us__side--left {
-  border-right: 1px solid rgba(250,248,244,0.06);
+.why-us__venn-body {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 18% 1fr;
+  align-items: center;
 }
 
-.why-us__side--right {
-  border-left: 1px solid rgba(250,248,244,0.06);
+.why-us__venn-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 20px;
+  height: 100%;
+  justify-content: center;
 }
 
-.why-us__side-title {
-  font-size: 9px;
+.why-us__venn-col--left  { padding-left: 52px; padding-right: 8px; }
+.why-us__venn-col--right { padding-right: 52px; padding-left: 8px; }
+.why-us__venn-col--center { padding: 0 6px; }
+
+.why-us__venn-title {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.2vw, 26px);
   font-weight: 800;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 28px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(250,248,244,0.06);
+  margin-bottom: 18px;
 }
 
-.why-us__role-list {
+.why-us__venn-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 5px;
 }
 
-.why-us__role-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(250,248,244,0.04);
-  transition: padding-left 0.2s ease;
-}
-
-.why-us__role-item:last-child { border-bottom: none; }
-
-.why-us__role-item:hover { padding-left: 6px; }
-
-.why-us__role-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
-  opacity: 0.6;
-}
-
-.why-us__role-item:hover .why-us__role-dot { opacity: 1; }
-
-.why-us__role-text {
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(250,248,244,0.72);
-  letter-spacing: 0.02em;
-  transition: color 0.2s;
-}
-
-.why-us__role-item:hover .why-us__role-text { color: var(--white); }
-
-/* Core circle → Venn diagram */
-.why-us__core {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px 20px;
-  position: relative;
-  min-height: 280px;
-}
-
-.why-us__venn-diagram {
-  position: relative;
-  width: 200px;
-  height: 160px;
-  flex-shrink: 0;
-}
-
-.why-us__venn-l,
-.why-us__venn-r {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(201,162,39,0.45);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.why-us__venn-l {
-  left: 0;
-  background: rgba(201,162,39,0.06);
-}
-
-.why-us__venn-r {
-  right: 0;
-  background: rgba(201,162,39,0.06);
-}
-
-.why-us__venn-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  text-align: center;
-  background: rgba(8,8,8,0.5);
-  padding: 6px 10px;
-  border-radius: 4px;
-}
-
-.why-us__core-word {
-  font-family: var(--font-display);
-  font-size: 38px;
-  letter-spacing: 0.14em;
+.why-us__venn-list li {
+  font-size: clamp(9px, 1.1vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--white);
+  line-height: 1.45;
+}
+
+.why-us__venn-artist {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 40px);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
   line-height: 1;
-}
-
-.why-us__core-divider {
-  width: 24px;
-  height: 1px;
-  background: var(--gold);
-  display: block;
-}
-
-.why-us__core-sub {
-  font-family: var(--font-serif);
-  font-size: 13px;
-  font-weight: 300;
-  font-style: italic;
-  color: rgba(250,248,244,0.58);
-  letter-spacing: 0.04em;
 }
 
 /* ── Offerings ── */
@@ -184,7 +104,6 @@
 .why-us__offerings-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 36px;
   border-bottom: 1px solid rgba(250,248,244,0.06);
 }
@@ -195,13 +114,6 @@
   letter-spacing: 0.42em;
   text-transform: uppercase;
   color: rgba(250,248,244,0.55);
-}
-
-.why-us__offerings-count {
-  font-family: var(--font-display);
-  font-size: 13px;
-  color: rgba(250,248,244,0.45);
-  letter-spacing: 0.06em;
 }
 
 .why-us__offerings-grid {
@@ -264,12 +176,6 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
-  .why-us__orbit {
-    grid-template-columns: 1fr 220px 1fr;
-  }
-}
-
 @media (max-width: 768px) {
   .why-us__header {
     grid-template-columns: 1fr;
@@ -278,19 +184,39 @@
     margin-bottom: 56px;
   }
 
-  .why-us__orbit {
-    grid-template-columns: 1fr;
+  .why-us__venn {
+    aspect-ratio: unset;
+    height: auto;
   }
 
-  .why-us__side--left { border-right: none; border-bottom: 1px solid rgba(250,248,244,0.06); }
-  .why-us__side--right { border-left: none; border-top: 1px solid rgba(250,248,244,0.06); }
+  .why-us__venn-svg { display: none; }
 
-  .why-us__core { min-height: 200px; padding: 36px 20px; }
+  .why-us__venn-body {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid rgba(250,248,244,0.12);
+  }
+
+  .why-us__venn-col {
+    width: 100%;
+    padding: 28px 24px;
+    border-bottom: 1px solid rgba(250,248,244,0.08);
+  }
+
+  .why-us__venn-col--left,
+  .why-us__venn-col--right { padding: 28px 24px; }
+
+  .why-us__venn-col--center {
+    padding: 20px 24px;
+    background: rgba(201,162,39,0.06);
+  }
+
+  .why-us__venn-list li { font-size: 11px; }
 
   .why-us__offerings-grid { grid-template-columns: 1fr; }
-  .why-us__offering { border-right: none !important; }
+  .why-us__offering { border-right: none !important; padding: 24px; }
   .why-us__offering:last-child { border-bottom: none; }
   .why-us__offerings-header { padding: 18px 24px; }
-  .why-us__offering { padding: 24px; }
-  .why-us__side { padding: 32px 24px; }
 }
