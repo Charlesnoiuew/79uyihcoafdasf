@@ -79,6 +79,7 @@ const cases = [
       'Campaign pop-up events: Spotify x SXSW Live Sessions, Pop-Up at SOB\'s, Pop-Up for #WEDC',
     ],
     highlights: ['Spotify x SXSW Live Sessions', 'Pop-Up at SOB\'s', 'Pop-Up Event for #WEDC', 'Tom\'s Diner Album Release Event'],
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__5_-removebg-preview.png',
   },
   {
     name: 'Meek Mill',
