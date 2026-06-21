@@ -60,6 +60,7 @@ const cases = [
       'Oversaw logistics for the duo\'s 2020 Billboard Magazine Cover',
     ],
     highlights: ['2× #1 Urban Radio Singles', '"Twerk" — RIAA Platinum', '"Act Up" — RIAA Platinum', 'Billboard Magazine Cover 2020', '2019 New Generation Tour'],
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__4_-removebg-preview.png',
   },
   {
     name: 'Wale',
