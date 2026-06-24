@@ -16,10 +16,10 @@ export default function About() {
               WHO WE ARE
             </h2>
 
-            <p className="about__boutique">Boutique Music Company</p>
+            <p className="about__boutique">(A) Boutique Music Company</p>
 
-            <p className="about__serif serif-lg" style={{ marginTop: 32 }}>
-              A boutique music company<br /><em>built on instinct.</em>
+            <p className="about__serif serif-lg" style={{ marginTop: 16 }}>
+              <em>Built on instinct, strategy and culture.</em>
             </p>
 
             <div className="about__rule" style={{ marginTop: 36 }} />
@@ -58,7 +58,7 @@ export default function About() {
 
         <div className={`about__quote-band animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.42s' }}>
           <p className="about__quote serif-xl">
-            "Over 100k songs are released daily. It takes <em>vision</em> to cut through."
+            "Over 100k songs are released daily. It takes <em>vision and strategy</em> to cut through."
           </p>
         </div>
 

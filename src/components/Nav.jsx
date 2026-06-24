@@ -5,9 +5,9 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Case Studies', href: '#case-studies' },
-  { label: 'Archive', href: '#ar' },
   { label: 'Founder', href: '#founder' },
   { label: 'Connect', href: 'mailto:Vibes@DreamInColor.com' },
+  { label: 'Archive', href: '#ar' },
 ]
 
 export default function Nav() {
@@ -23,7 +23,6 @@ export default function Nav() {
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <a href="#hero" className="nav__logo">
-        <img src="/images/diclogo.png" alt="Dream In Color Entertainment" className="nav__logo-img" />
         <div className="nav__logo-text">
           <span className="nav__logo-main">DREAM IN COLOR</span>
           <span className="nav__logo-sub">ENTERTAINMENT</span>

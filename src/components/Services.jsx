@@ -21,7 +21,7 @@ export default function Services() {
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
             <span className="section-tag">What We Do</span>
             <h2 className="services__heading display-xl">
-              WHAT<br />WE DO
+              WHAT WE DO
             </h2>
           </div>
           <div className={`services__header-right animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.15s' }}>

@@ -5,7 +5,7 @@ const stats = [
   { value: 10, suffix: '+', label: 'Years Experience', desc: 'Across every music vertical' },
   { value: 20, suffix: '+', label: 'Gold & Platinum Records', desc: 'RIAA certified releases' },
   { value: 500, prefix: '$', suffix: 'K+', label: 'Revenue Generated for Clients', desc: 'Across managed projects' },
-  { value: 1, suffix: 'B+', label: 'Streams Generated', desc: 'Across managed projects' },
+  { value: 1, suffix: 'B+', label: 'Streams Generated', desc: 'One Billion Streams across managed projects' },
 ]
 
 function StatBlock({ stat, inView, delay }) {
