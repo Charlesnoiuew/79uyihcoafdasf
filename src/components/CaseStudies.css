@@ -238,17 +238,19 @@
 .cs-row__panel-inner {
   min-height: 0;
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 45% 55%;
   gap: 0;
   overflow: hidden;
   border-top: 1px solid rgba(250,248,244,0.06);
+  align-items: stretch;
 }
 
 .cs-row__img-col {
   position: relative;
   overflow: hidden;
-  min-height: 340px;
+  min-height: 420px;
   background: var(--charcoal);
+  align-self: stretch;
 }
 
 .cs-row__img {
