@@ -151,24 +151,11 @@ export default function CaseStudies() {
         <div className="cs__logos-bar">
           <span className="cs__logos-label">Worked With</span>
           <div className="cs__logos-list">
-            <span className="cs__logo">
-              <img src="/images/png-transparent-atlantic-records-hd-logo.png" alt="Atlantic Records" className="cs__logo-img" />
-            </span>
-            <span className="cs__logo">
-              <img src="/images/united-masters-review-930x562-1.webp" alt="United Masters" className="cs__logo-img cs__logo-img--dark-bg" />
-            </span>
-            <span className="cs__logo">
-              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
-            </span>
-            <span className="cs__logo">
-              <img src="/images/Alamo_Records.png" alt="Alamo Records" className="cs__logo-img" />
-            </span>
-            <span className="cs__logo">
-              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
-            </span>
-            <span className="cs__logo">
-              <img src="/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png" alt="Partner Logo" className="cs__logo-img" />
-            </span>
+            <img
+              src="/images/DREAM_IN_COLOR_ENTERTAINMENT__2025_(6).png"
+              alt="Atlantic Records, Alamo Records, Motown, Quality Control, Machine Entertainment Group, Hitmaker"
+              className="cs__logos-strip"
+            />
           </div>
         </div>
 
