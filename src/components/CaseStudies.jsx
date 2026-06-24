@@ -152,8 +152,8 @@ export default function CaseStudies() {
           <span className="cs__logos-label">Worked With</span>
           <div className="cs__logos-list">
             <img
-              src="/images/DREAM_IN_COLOR_ENTERTAINMENT__2025_(6).png"
-              alt="Atlantic Records, Alamo Records, Motown, Quality Control, Machine Entertainment Group, Hitmaker"
+              src="/images/Screenshot_2026-06-24_005635.png"
+              alt="Atlantic Records, United Masters, Dream Chasers, Alamo Records, Capitol Records, Motown, Quality Control, Machine Entertainment Group, Hitmaker"
               className="cs__logos-strip"
             />
           </div>

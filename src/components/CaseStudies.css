@@ -104,13 +104,12 @@
 }
 
 .cs__logos-strip {
-  height: 44px;
+  height: 56px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.72;
-  padding: 0 16px;
+  opacity: 0.85;
+  padding: 0 8px;
   transition: opacity 0.3s;
 }
 .cs__logos-strip:hover { opacity: 1; }
