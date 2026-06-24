@@ -45,11 +45,10 @@ const cases = [
     role: 'Music Group',
     stat: '2× RIAA Platinum',
     year: '2018–2020',
-    image: '/images/image copy copy copy copy copy copy copy.png',
+    image: '/images/citygirlspicturenobackground.png',
     logos: ['Quality Control', 'Republic Records'],
     imgFit: 'contain',
-    imgBg: '#111',
-    imgHeight: 280,
+    imgBg: 'var(--black)',
     spotify: 'https://open.spotify.com/artist/37hAfseJWi0G3Scife12Il',
     instagram: 'https://www.instagram.com/citygirls/',
     bullets: [
