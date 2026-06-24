@@ -68,6 +68,7 @@ const cases = [
     stat: 'Seinfeld Campaign',
     year: '2015–2016',
     image: '/images/6dce8b374a493bff0baeadc0810b8e7c.jpg',
+    imgBg: 'var(--black)',
     logos: ['Maybach Music', 'Atlantic Records'],
     spotify: 'https://open.spotify.com/artist/67nwj3Y5sZQLl72VNUHEYE',
     instagram: 'https://www.instagram.com/wale/',
@@ -101,7 +102,7 @@ const cases = [
   {
     name: 'G-Herbo',
     role: 'Record Label',
-    stat: 'Republic Records',
+    stat: '1 Album Cycle',
     year: '2017–2018',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     logos: ['Republic Records'],
