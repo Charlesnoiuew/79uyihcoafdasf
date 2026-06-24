@@ -248,7 +248,7 @@
 .cs-row__img-col {
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  min-height: calc(100vh - 280px);
   background: var(--charcoal);
   align-self: stretch;
 }
