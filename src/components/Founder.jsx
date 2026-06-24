@@ -33,12 +33,8 @@ export default function Founder() {
 
           <div className={`founder__content animate-on-scroll from-right ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
             <span className="section-tag">The Founder</span>
-            <h2 className="founder__heading display-xl">
-              MEET CLAUDIA
-            </h2>
-            <p className="founder__serif serif-lg">
-              <em>A decade building artists.</em>
-            </p>
+            <h2 className="founder__heading display-xl">MEET CLAUDIA</h2>
+            <p className="founder__serif serif-lg"><em>A decade developing artists and their careers.</em></p>
             <div className="divider" />
 
             <p className="body-text" style={{ marginBottom: 24 }}>
@@ -51,7 +47,7 @@ export default function Founder() {
             <div className="founder__creds">
               {credentials.map((c, i) => (
                 <div key={i} className={`founder__cred animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: `${0.45 + i * 0.09}s` }}>
-                  <span className="founder__cred-n">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="founder__cred-n">→</span>
                   <span className="founder__cred-text">{c}</span>
                 </div>
               ))}
