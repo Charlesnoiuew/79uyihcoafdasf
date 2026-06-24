@@ -133,7 +133,7 @@
 .cs-row__trigger {
   width: 100%;
   display: grid;
-  grid-template-columns: 52px 88px 1fr auto 36px;
+  grid-template-columns: 52px 1fr auto 36px;
   align-items: center;
   gap: 28px;
   padding: 28px 0;
@@ -395,7 +395,7 @@
 @media (max-width: 900px) {
   .cs__header { grid-template-columns: 1fr; gap: 40px; }
   .cs__meta-stats { gap: 32px; }
-  .cs-row__trigger { grid-template-columns: 40px 72px 1fr 28px; gap: 16px; }
+  .cs-row__trigger { grid-template-columns: 40px 1fr 28px; gap: 16px; }
   .cs-row__stat { display: none; }
   .cs-row__panel-inner { grid-template-columns: 1fr; }
   .cs-row__img-col { min-height: 260px; }
@@ -404,6 +404,6 @@
 
 @media (max-width: 600px) {
   .cs-row__name { font-size: clamp(18px, 6vw, 28px); }
-  .cs-row__trigger { grid-template-columns: 36px 56px 1fr 24px; gap: 12px; padding: 20px 0; }
+  .cs-row__trigger { grid-template-columns: 36px 1fr 24px; gap: 12px; padding: 20px 0; }
   .cs-row__thumb-wrap { width: 56px; height: 56px; }
 }

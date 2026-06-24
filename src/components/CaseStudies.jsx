@@ -188,10 +188,6 @@ function CaseRow({ c, index, isOpen, onToggle }) {
       <button className="cs-row__trigger" onClick={onToggle}>
         <span className="cs-row__idx">{String(index + 1).padStart(2, '0')}</span>
 
-        <span className="cs-row__thumb-wrap">
-          <img src={c.image} alt={c.name} className="cs-row__thumb" style={c.imgFit ? { objectFit: c.imgFit, background: c.imgBg } : undefined} />
-        </span>
-
         <span className="cs-row__info">
           <span className="cs-row__name">{c.name}</span>
         </span>
