@@ -182,4 +182,10 @@
 @media (max-width: 600px) {
   .about__pillars { grid-template-columns: 1fr; }
   .about__photo-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+  .about__inner { margin-bottom: 48px; }
+  .about__photo-grid { margin-bottom: 48px; }
+}
+
+@media (max-width: 400px) {
+  .about__photo-grid { grid-template-columns: 1fr; }
 }

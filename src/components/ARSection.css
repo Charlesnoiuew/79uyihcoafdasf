@@ -276,4 +276,8 @@
 @media (max-width: 600px) {
   .ar__track { flex-wrap: wrap; gap: 12px; }
   .ar__track-right { width: 100%; justify-content: flex-end; }
+  .ar__track-num { font-size: 24px; width: 36px; }
+  .ar__track-title { font-size: 18px; }
+  .ar__player { padding: 0 0 16px 48px; }
+  .ar__cta-inner { flex-direction: column; align-items: flex-start; }
 }

@@ -393,19 +393,23 @@
   object-fit: cover;
 }
 
-/* ── Responsive ── */
 @media (max-width: 900px) {
   .cs__header { grid-template-columns: 1fr; gap: 40px; }
   .cs__meta-stats { gap: 32px; }
   .cs-row__trigger { grid-template-columns: 40px 1fr 28px; gap: 16px; }
   .cs-row__stat { display: none; }
   .cs-row__panel-inner { grid-template-columns: 1fr; min-height: unset; }
-  .cs-row__img-col { min-height: 260px; }
+  .cs-row__img-col { min-height: 56vw; }
   .cs-row__details { padding: 28px 24px; }
 }
 
 @media (max-width: 600px) {
-  .cs-row__name { font-size: clamp(18px, 6vw, 28px); }
+  .cs-row__name { font-size: clamp(18px, 6vw, 28px); white-space: normal; }
   .cs-row__trigger { grid-template-columns: 36px 1fr 24px; gap: 12px; padding: 20px 0; }
   .cs-row__thumb-wrap { width: 56px; height: 56px; }
+  .cs__meta-stats { flex-wrap: wrap; gap: 20px; }
+  .cs__logos-label { display: none; }
+  .cs__logo { padding: 0 16px; font-size: 11px; }
+  .cs-row__img-col { min-height: 70vw; }
+  .cs-row__img-name { font-size: 24px; }
 }

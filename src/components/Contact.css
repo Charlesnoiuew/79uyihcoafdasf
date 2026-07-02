@@ -60,7 +60,6 @@
   text-transform: uppercase;
   letter-spacing: -0.02em;
   margin-bottom: 0;
-  white-space: nowrap;
 }
 
 .contact__hero-title {
@@ -516,8 +515,16 @@
 }
 
 @media (max-width: 600px) {
-  .contact__hero-inner { padding-top: 100px; padding-bottom: 60px; }
+  .contact__hero-inner { padding-top: 100px; padding-bottom: 60px; gap: 40px; }
+  .contact__hero-heading { font-size: clamp(48px, 14vw, 100px); }
   .contact__form-header { flex-direction: column; gap: 8px; align-items: flex-start; }
   .contact__form-footer { flex-direction: column; align-items: flex-start; }
   .contact__submit { width: 100%; justify-content: center; }
+  .contact__info-value { font-size: 14px; }
+}
+
+@media (max-width: 400px) {
+  .contact__hero-inner { padding-top: 90px; }
+  .site-footer { padding: 40px 0 32px; }
+  .site-footer__nav { gap: 20px; }
 }

@@ -211,6 +211,12 @@
 @media (max-width: 600px) {
   .hero__layout { padding: 0 20px 32px; }
   .hero__header { padding-top: 96px; flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 0; }
+  .hero__eyebrow { white-space: normal; overflow-wrap: break-word; }
   .hero__numbers { flex-wrap: wrap; }
   .hero__stat { min-width: 50%; padding: 16px 0 0; }
+  .hero__body { padding: 32px 0 40px; }
+}
+@media (max-width: 400px) {
+  .hero__layout { padding: 0 16px 24px; }
+  .hero__stat { min-width: 100%; }
 }
