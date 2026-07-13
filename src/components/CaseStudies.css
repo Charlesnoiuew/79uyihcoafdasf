@@ -253,6 +253,13 @@
   align-self: stretch;
 }
 
+.cs-row__img-col--compact {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cs-row__img {
   width: 100%;
   height: 100%;

@@ -138,7 +138,8 @@ const cases = [
     year: '2015–2016',
     image: '/images/Maybach_Music_Group_logo.jpg',
     imgFit: 'contain',
-    imgBg: 'var(--black)',
+    imgBg: '#111',
+    compact: true,
     logos: ['Atlantic Records'],
     bullets: [
       "Led marketing strategy across Rick Ross' JV label \"MMG\"",
@@ -233,8 +234,8 @@ function CaseRow({ c, index, isOpen, onToggle }) {
       <div className="cs-row__panel">
         <div className="cs-row__panel-inner">
 
-          <div className="cs-row__img-col" style={c.imgBg ? { background: c.imgBg } : undefined}>
-            <img src={c.image} alt={c.name} className="cs-row__img" style={c.imgFit ? { objectFit: c.imgFit, height: c.imgHeight ?? undefined } : undefined} />
+          <div className={`cs-row__img-col ${c.compact ? 'cs-row__img-col--compact' : ''}`} style={c.imgBg ? { background: c.imgBg } : undefined}>
+            <img src={c.image} alt={c.name} className="cs-row__img" style={c.imgFit ? { objectFit: c.imgFit, padding: c.imgFit === 'contain' ? '48px' : undefined, height: c.imgHeight ?? undefined } : undefined} />
             <div className="cs-row__img-overlay">
               <span className="cs-row__img-name">{c.name}</span>
               <div className="cs-row__links">
