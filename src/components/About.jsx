@@ -16,7 +16,7 @@ export default function About() {
               WHO WE ARE
             </h2>
 
-            <p className="about__boutique">(A) Boutique Music Company</p>
+            <p className="about__boutique">A Boutique Music Company</p>
 
             <p className="about__serif serif-lg" style={{ marginTop: 16 }}>
               <em>Built on instinct, strategy and culture.</em>

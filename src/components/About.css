@@ -29,6 +29,7 @@
 
 .about__serif {
   color: rgba(250,248,244,0.6);
+  white-space: nowrap;
 }
 
 .about__rule {
