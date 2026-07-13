@@ -99,6 +99,22 @@ const cases = [
     highlights: ['Tidal x Pool Party Event', 'Gold Room Merch Pop Up', 'Bike Life Mobile App', 'Hot 97 Summer Jam Integration', 'Meekend Music Pt. 1 & 2'],
   },
   {
+    name: 'NJOMZA',
+    role: 'Artist Marketing',
+    stat: '3 Project Cycles',
+    year: '2016–2019',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    logos: ['Capitol Records'],
+    spotify: 'https://open.spotify.com/artist/3zOUpziwcfY2bCh4VyJ4Am?si=6358726eadac4d4e',
+    instagram: 'https://www.instagram.com/notnjomza/',
+    bullets: [
+      'Led marketing strategy across three NJOMZA project cycles: "Sad For You", "Vacation", and "Stages"',
+      'Created and conceptualized bespoke social content for "What\'s My Name"',
+    ],
+    highlights: ['"Sad For You" Campaign', '"Vacation" Campaign', '"Stages" Campaign', 'Bespoke Social Content — "What\'s My Name"'],
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__2_-removebg-preview_(1).png',
+  },
+  {
     name: 'G-Herbo',
     role: 'Record Label',
     stat: '1 Album Cycle',
