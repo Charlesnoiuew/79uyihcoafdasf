@@ -67,9 +67,7 @@ export default function ARSection() {
               rel="noopener noreferrer"
               className="ar__platform"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                <path d="M17.05 0H6.95C3.12 0 0 3.12 0 6.95v10.1C0 20.88 3.12 24 6.95 24h10.1C20.88 24 24 20.88 24 17.05V6.95C24 3.12 20.88 0 17.05 0zm-1.6 7.04l-5.65 1.48v5.16c-.37-.1-.75-.16-1.16-.16-1.56 0-2.84 1.07-2.84 2.38s1.28 2.38 2.84 2.38 2.84-1.07 2.84-2.38V9.52l3.97-1.04v4.04c-.37-.1-.75-.16-1.16-.16-1.56 0-2.84 1.07-2.84 2.38s1.28 2.38 2.84 2.38 2.84-1.07 2.84-2.38V7.04h-.68z"/>
-              </svg>
+              <img src="/images/apple-logo_(1).png" alt="" aria-hidden="true" width="20" height="20" style={{ objectFit: 'contain' }} />
               Apple Music
             </a>
           </div>
