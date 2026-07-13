@@ -17,13 +17,7 @@
 }
 
 .contact__hero-glow {
-  position: absolute;
-  top: -20%;
-  left: 5%;
-  width: 70%;
-  height: 90%;
-  background: radial-gradient(ellipse at 30% 50%, rgba(201,162,39,0.07) 0%, transparent 65%);
-  pointer-events: none;
+  display: none;
 }
 
 .contact__hero-lines {
@@ -54,12 +48,13 @@
 
 .contact__hero-heading {
   font-family: var(--font-display);
-  font-size: clamp(72px, 11vw, 160px);
+  font-size: clamp(56px, 8vw, 120px);
   line-height: 0.88;
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .contact__hero-title {
@@ -449,7 +444,7 @@
   font-weight: 700;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(250,248,244,0.3);
+  color: var(--gold);
 }
 
 .site-footer__nav {
@@ -464,7 +459,7 @@
   font-weight: 700;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(250,248,244,0.55);
+  color: var(--gold);
   text-decoration: none;
   transition: color 0.25s;
   position: relative;
@@ -474,7 +469,7 @@
   position: absolute;
   bottom: -3px; left: 0;
   width: 0; height: 1px;
-  background: var(--gold);
+  background: var(--white);
   transition: width 0.28s ease;
 }
 .site-footer__nav-link:hover { color: var(--white); }
@@ -498,6 +493,7 @@
   font-family: var(--font-serif);
   font-size: 16px;
   color: var(--gold);
+  font-style: italic;
 }
 
 /* ══════════════════════════════

@@ -5,7 +5,6 @@ import './ARSection.css'
 const tracks = [
   { title: 'DIE YOUNG ft. 347 Aidan', artist: 'Sleepy Hallow', streams: '500M Streams', tag: 'A&R', spotifyId: '6EbVuwU7EnKeF2hdpViXCH' },
   { title: 'RUN IT UP ft. A-Boogie & Sleepy Hallow', artist: 'Sheff G', streams: '90M Streams', tag: 'A&R', spotifyId: '3tr0NiL6ghHGmmgcyzVU5P' },
-  { title: 'MURDA SHE WROTE', artist: 'Sleepy Hallow', streams: '5M Streams', tag: 'A&R', spotifyId: '3lLT1GM0h5bJXv0lToc4zw' },
   { title: 'FOREVER ROADRUNNING & DA RICH KID MIXTAPES', artist: 'BMG Dmack', streams: null, tag: 'A&R', spotifyId: null },
   { title: 'USED TO ft. Stalley', artist: 'Life Dutchee', streams: null, tag: 'A&R', spotifyId: null },
 ]
@@ -68,8 +67,8 @@ export default function ARSection() {
               rel="noopener noreferrer"
               className="ar__platform"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208a5.485 5.485 0 00-.44 1.589c-.05.283-.06.57-.077.856-.005.094-.008.188-.01.282v11.27c.012.214.018.428.034.642.057.88.28 1.707.718 2.467.792 1.39 1.978 2.26 3.528 2.625.48.116.974.166 1.464.188.332.015.665.02.998.022H17.3c.332-.003.664-.007.997-.022.49-.022.984-.072 1.464-.188 1.55-.365 2.737-1.235 3.528-2.625.438-.76.661-1.587.718-2.467.017-.214.022-.428.034-.642V7.09c0-.094-.003-.188-.01-.282-.015-.28-.023-.559-.04-.84a3.56 3.56 0 00-.002-.044zm-3.73 11.16c0 1.1-.88 1.99-1.98 1.99H5.716c-1.1 0-1.98-.89-1.98-1.99V6.716c0-1.1.88-1.98 1.98-1.98h12.568c1.1 0 1.98.88 1.98 1.98v10.568z"/>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path d="M17.05 0H6.95C3.12 0 0 3.12 0 6.95v10.1C0 20.88 3.12 24 6.95 24h10.1C20.88 24 24 20.88 24 17.05V6.95C24 3.12 20.88 0 17.05 0zm-1.6 7.04l-5.65 1.48v5.16c-.37-.1-.75-.16-1.16-.16-1.56 0-2.84 1.07-2.84 2.38s1.28 2.38 2.84 2.38 2.84-1.07 2.84-2.38V9.52l3.97-1.04v4.04c-.37-.1-.75-.16-1.16-.16-1.56 0-2.84 1.07-2.84 2.38s1.28 2.38 2.84 2.38 2.84-1.07 2.84-2.38V7.04h-.68z"/>
               </svg>
               Apple Music
             </a>

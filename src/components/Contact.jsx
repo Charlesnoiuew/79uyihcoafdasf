@@ -58,6 +58,7 @@ export default function Contact() {
           </div>
           <div className="site-footer__bottom">
             <span className="site-footer__copy">© Dream In Color Entertainment. All rights reserved.</span>
+            <span className="site-footer__credit">A&R'd by Claudia</span>
           </div>
         </div>
       </footer>

@@ -60,12 +60,18 @@
   color: var(--gold);
 }
 
-.founder__heading { color: var(--white); margin-bottom: 12px; }
+.founder__heading {
+  color: var(--white);
+  margin-bottom: 12px;
+  font-size: clamp(48px, 7vw, 100px);
+  white-space: nowrap;
+}
 
 .founder__serif {
-  color: rgba(250,248,244,0.58);
-  font-size: clamp(20px, 2.5vw, 32px);
+  color: var(--gold);
+  font-size: clamp(18px, 2vw, 26px);
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .founder__creds {
