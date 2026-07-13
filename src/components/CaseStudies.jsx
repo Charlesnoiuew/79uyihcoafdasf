@@ -131,6 +131,21 @@ const cases = [
     ],
     highlights: ["'Survivor's Remorse' Campaign", 'Republic Records — Full Cycle Rollout', 'Digital Marketing Placements Secured', 'Label–Artist–Management Liaison'],
   },
+  {
+    name: 'Maybach Music Group',
+    role: 'Record Label',
+    stat: 'MMG Weekend',
+    year: '2015–2016',
+    image: '/images/Maybach_Music_Group_logo.jpg',
+    imgFit: 'contain',
+    imgBg: 'var(--black)',
+    logos: ['Atlantic Records'],
+    bullets: [
+      "Led marketing strategy across Rick Ross' JV label \"MMG\"",
+      "Managed marketing, partnerships, and production for Rick Ross' annual \"MMG Weekend\" event",
+    ],
+    highlights: ['MMG Weekend — Annual Event Production', 'Full Label Marketing Strategy', 'Brand Partnerships & Activations'],
+  },
 ]
 
 export default function CaseStudies() {
