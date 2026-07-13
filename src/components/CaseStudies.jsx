@@ -136,7 +136,7 @@ const cases = [
     role: 'Record Label',
     stat: 'MMG Weekend',
     year: '2015–2016',
-    image: '/images/Maybach_Music_Group_logo.jpg',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     imgFit: 'contain',
     imgBg: '#111',
     compact: true,
