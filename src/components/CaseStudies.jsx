@@ -112,7 +112,7 @@ const cases = [
       'Created and conceptualized bespoke social content for "What\'s My Name"',
     ],
     highlights: ['"Sad For You" Campaign', '"Vacation" Campaign', '"Stages" Campaign', 'Bespoke Social Content — "What\'s My Name"'],
-    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__2_-removebg-preview_(1).png',
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__7_-removebg-preview.png',
   },
   {
     name: 'G-Herbo',
