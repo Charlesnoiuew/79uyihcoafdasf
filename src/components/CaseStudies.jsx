@@ -119,7 +119,7 @@ const cases = [
     role: 'Record Label',
     stat: '1 Album Cycle',
     year: '2017–2018',
-    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     logos: ['Republic Records'],
     spotify: 'https://open.spotify.com/artist/1VrLYaVFEBnWnNFrRNLiAo',
     instagram: 'https://www.instagram.com/nolimitherbo/',
