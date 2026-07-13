@@ -5,7 +5,7 @@ const tracks = [
   { title: 'DIE YOUNG ft. 347 Aidan', artist: 'Sleepy Hallow', streams: '500M Streams', tag: 'A&R', youtube: 'https://youtu.be/SPlOfpaY_qc?si=WPKaRBkm_hMCVlFP' },
   { title: 'RUN IT UP ft. A-Boogie & Sleepy Hallow', artist: 'Sheff G', streams: '90M Streams', tag: 'A&R', youtube: 'https://youtu.be/Fsg1-8OpYKY?si=vyUew4LSXKaH3NBS' },
   { title: 'FOREVER ROADRUNNING & DA RICH KID MIXTAPES', artist: 'BMG Dmack', streams: null, tag: 'A&R', spotify: 'https://open.spotify.com/album/1FmSjoWTWHPawGHn7d2M24?si=9431f029b86242d6' },
-  { title: 'USED TO ft. Stalley', artist: 'Life Dutchee', streams: null, tag: 'A&R', youtube: null },
+  { title: 'USED TO ft. Stalley', artist: 'Life Dutchee', streams: null, tag: 'A&R', youtube: 'https://youtu.be/4ZaZgZ9D4hI?si=WG44j6w-IVuoTiiN' },
 ]
 
 export default function ARSection() {
