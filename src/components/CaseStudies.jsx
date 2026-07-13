@@ -8,7 +8,7 @@ const cases = [
     role: 'Artist Management',
     stat: 'Spotify Radar AOTY',
     year: '2020–2022',
-    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     logos: ['Interscope Records', 'Deadzone'],
     spotify: 'https://open.spotify.com/artist/6EPlBSH2RSiettczlz7ihV',
     instagram: 'https://www.instagram.com/_sleepyhallow_/',
