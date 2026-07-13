@@ -129,9 +129,9 @@ export default function CaseStudies() {
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
             <span className="section-tag">Case Studies</span>
             <h2 className="cs__heading display-xl">
-              CASE STUDIES
+              CASE<br />STUDIES
             </h2>
-            <p className="cs__sub serif-lg"><em>A decade of results.</em></p>
+            <p className="cs__sub serif-lg" style={{ color: 'var(--gold)' }}><em>A decade of results.</em></p>
           </div>
           <div className={`cs__meta animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: '0.15s' }}>
             <div className="cs__meta-stats">
