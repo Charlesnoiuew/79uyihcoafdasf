@@ -86,7 +86,7 @@ const cases = [
     role: 'Record Label',
     stat: '2 Album Cycles',
     year: '2015–2018',
-    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy.png',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     logos: ['Atlantic Records', 'Republic Records'],
     spotify: 'https://open.spotify.com/artist/20sxb77xiYeusSH8cVdatc',
     instagram: 'https://www.instagram.com/meekmill/',
