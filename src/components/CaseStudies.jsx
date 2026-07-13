@@ -38,7 +38,7 @@ const cases = [
       'Managed the execution of all contractual obligations to ensure accuracy, timeliness, and full compliance',
     ],
     highlights: ['Run It Up MV — 10M Views', 'Vevo Ctrl Live Session: Eeny Meany Miny Moe', 'Vevo Ctrl Live Session: Lights On', 'Audiomack #UpNow Artist', '#FreeSheffG Tour Mascot'],
-    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__3_-removebg-preview.png',
+    highlightImage: '/images/DREAM_IN_COLOR_ENTERTAINMENT__2025__8_-removebg-preview.png',
   },
   {
     name: 'City Girls',
