@@ -66,7 +66,7 @@ const cases = [
     role: 'Record Label',
     stat: 'Seinfeld Campaign',
     year: '2015–2016',
-    image: '/images/6dce8b374a493bff0baeadc0810b8e7c.jpg',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
     imgBg: 'var(--black)',
     logos: ['Maybach Music', 'Atlantic Records'],
     spotify: 'https://open.spotify.com/artist/67nwj3Y5sZQLl72VNUHEYE',
