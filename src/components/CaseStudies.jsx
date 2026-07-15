@@ -160,7 +160,7 @@ export default function CaseStudies() {
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
             <span className="section-tag">Case Studies</span>
             <h2 className="cs__heading display-xl">
-              CASE<br />STUDIES
+              CASE STUDIES
             </h2>
             <p className="cs__sub serif-lg" style={{ color: 'var(--gold)' }}><em>A decade of results.</em></p>
           </div>
