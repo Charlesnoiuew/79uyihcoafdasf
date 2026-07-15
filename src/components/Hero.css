@@ -86,74 +86,83 @@
   text-align: center;
 }
 
-/* Main line — DREAM IN COLOR */
-.hero__main-line {
+.hero__serif-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   overflow: hidden;
   padding-bottom: 0.04em;
 }
 
-.hero__main-word {
-  font-family: var(--font-display);
-  font-size: clamp(48px, 11vw, 160px);
+.hero__serif-word {
+  font-family: var(--font-serif);
+  font-size: clamp(88px, 13.5vw, 178px);
+  font-weight: 300;
   color: var(--white);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.01em;
   line-height: 1;
   display: block;
   transform: translateY(110%);
   transition: transform 1s cubic-bezier(0.16,1,0.3,1);
-  text-shadow:
-    0 0 20px rgba(255,255,255,0.5),
-    0 0 40px rgba(255,255,255,0.3),
-    0 0 80px rgba(255,255,255,0.15),
-    0 0 120px rgba(255,255,255,0.08);
+}
+.hero__serif-word--em {
+  font-style: italic;
+  color: rgba(250,248,244,0.65);
+}
+
+.hero__display-line {
+  overflow: hidden;
+  padding-bottom: 0.02em;
+}
+
+.hero__display-word {
+  font-family: var(--font-display);
+  font-size: clamp(116px, 21vw, 280px);
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.88;
+  display: block;
+  transform: translateY(110%);
+  transition: transform 1s cubic-bezier(0.16,1,0.3,1) 0.14s;
   animation: none;
 }
 
-.hero--loaded .hero__main-word {
-  animation: neonGlow 3.5s ease-in-out infinite;
+.hero--loaded .hero__display-word {
+  animation: colorGlow 3.5s ease-in-out infinite;
 }
 
-@keyframes neonGlow {
+@keyframes colorGlow {
   0%, 100% {
     text-shadow:
-      0 0 20px rgba(255,255,255,0.5),
-      0 0 40px rgba(255,255,255,0.3),
-      0 0 80px rgba(255,255,255,0.15),
-      0 0 120px rgba(255,255,255,0.08);
+      0 0 80px rgba(228,207,72,0.08),
+      0 0 160px rgba(228,207,72,0.04);
   }
   50% {
     text-shadow:
-      0 0 30px rgba(255,255,255,0.8),
-      0 0 60px rgba(255,255,255,0.5),
-      0 0 100px rgba(255,255,255,0.3),
-      0 0 160px rgba(255,255,255,0.15);
+      0 0 60px rgba(228,207,72,0.22),
+      0 0 120px rgba(228,207,72,0.12),
+      0 0 220px rgba(228,207,72,0.06);
   }
 }
 
-/* Sub line — ENTERTAINMENT */
-.hero__sub-line {
-  overflow: hidden;
-  padding-bottom: 0.02em;
-  margin-top: 8px;
-}
+.hero__display-line--2 { margin-top: 6px; }
 
-.hero__sub-word {
+.hero__display-word-sm {
   font-family: var(--font-display);
-  font-size: clamp(14px, 2vw, 28px);
-  color: rgba(255,255,255,0.75);
+  font-size: clamp(16px, 2.2vw, 28px);
+  color: rgba(250,248,244,0.48);
   text-transform: uppercase;
   letter-spacing: 0.5em;
   display: block;
   transform: translateY(110%);
-  transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.14s;
-  text-shadow:
-    0 0 10px rgba(255,255,255,0.3),
-    0 0 20px rgba(255,255,255,0.15);
+  transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.26s;
 }
 
-.hero--loaded .hero__main-word,
-.hero--loaded .hero__sub-word {
+.hero--loaded .hero__serif-word,
+.hero--loaded .hero__serif-word--em,
+.hero--loaded .hero__display-word,
+.hero--loaded .hero__display-word-sm {
   transform: translateY(0);
 }
 

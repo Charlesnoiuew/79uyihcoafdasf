@@ -23,11 +23,15 @@ export default function Hero() {
 
         <div className="hero__body">
           <div className="hero__title-area">
-            <div className="hero__main-line">
-              <span className="hero__main-word">DREAM IN COLOR</span>
+            <div className="hero__serif-line">
+              <span className="hero__serif-word">Dream</span>
+              <span className="hero__serif-word hero__serif-word--em"> In</span>
             </div>
-            <div className="hero__sub-line">
-              <span className="hero__sub-word">ENTERTAINMENT</span>
+            <div className="hero__display-line">
+              <span className="hero__display-word">COLOR</span>
+            </div>
+            <div className="hero__display-line hero__display-line--2">
+              <span className="hero__display-word-sm">ENTERTAINMENT</span>
             </div>
           </div>
         </div>
