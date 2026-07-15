@@ -89,7 +89,8 @@
 /* Main line — DREAM IN COLOR (white neon glow) */
 .hero__main-line {
   overflow: hidden;
-  padding-bottom: 0.04em;
+  padding: 30px 40px;
+  margin: -30px -40px;
 }
 
 .hero__main-word {
@@ -104,11 +105,9 @@
   transform: translateY(110%);
   transition: transform 1s cubic-bezier(0.16,1,0.3,1);
   text-shadow:
-    0 0 12px #fff,
-    0 0 30px rgba(255,255,255,0.8),
-    0 0 60px rgba(255,255,255,0.5),
-    0 0 100px rgba(255,255,255,0.3),
-    0 0 180px rgba(255,255,255,0.15);
+    0 0 8px #fff,
+    0 0 18px rgba(255,255,255,0.7),
+    0 0 36px rgba(255,255,255,0.4);
   animation: none;
 }
 
@@ -119,27 +118,23 @@
 @keyframes whiteGlow {
   0%, 100% {
     text-shadow:
-      0 0 12px #fff,
-      0 0 30px rgba(255,255,255,0.8),
-      0 0 60px rgba(255,255,255,0.5),
-      0 0 100px rgba(255,255,255,0.3),
-      0 0 180px rgba(255,255,255,0.15);
+      0 0 8px #fff,
+      0 0 18px rgba(255,255,255,0.7),
+      0 0 36px rgba(255,255,255,0.4);
   }
   50% {
     text-shadow:
-      0 0 18px #fff,
-      0 0 44px rgba(255,255,255,0.95),
-      0 0 80px rgba(255,255,255,0.65),
-      0 0 130px rgba(255,255,255,0.4),
-      0 0 220px rgba(255,255,255,0.2);
+      0 0 12px #fff,
+      0 0 26px rgba(255,255,255,0.85),
+      0 0 50px rgba(255,255,255,0.5);
   }
 }
 
 /* Sub line — ENTERTAINMENT (gold neon glow) */
 .hero__sub-line {
   overflow: hidden;
-  padding-bottom: 0.02em;
-  margin-top: 10px;
+  padding: 20px 30px;
+  margin: -10px -30px 0;
 }
 
 .hero__sub-word {
@@ -153,10 +148,9 @@
   transform: translateY(110%);
   transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.14s;
   text-shadow:
-    0 0 8px rgba(255,180,0,0.9),
-    0 0 20px rgba(255,160,0,0.6),
-    0 0 40px rgba(255,140,0,0.35),
-    0 0 70px rgba(255,120,0,0.2);
+    0 0 6px rgba(255,180,0,0.8),
+    0 0 14px rgba(255,160,0,0.5),
+    0 0 28px rgba(255,140,0,0.25);
 }
 
 .hero--loaded .hero__main-word,
