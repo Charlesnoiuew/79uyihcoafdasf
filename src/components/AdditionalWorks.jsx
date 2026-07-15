@@ -37,6 +37,11 @@ const albums = [
     artist: 'Various Artists',
     image: '/images/files_5165199-2026-07-15T02-16-49-846Z-image.png',
   },
+  {
+    title: 'More Issues Than Vogue',
+    artist: 'K. Michelle',
+    image: '/images/a2835a43-6c34-4667-a63e-35e80f4ca2ea.png',
+  },
 ]
 
 export default function AdditionalWorks() {
