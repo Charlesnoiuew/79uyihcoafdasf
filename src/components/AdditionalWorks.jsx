@@ -7,6 +7,11 @@ const albums = [
     artist: 'Lil Yachty',
     image: '/images/albums/image.png',
   },
+  {
+    title: 'Tell Ya Story',
+    artist: 'Layton Greene',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+  },
 ]
 
 export default function AdditionalWorks() {
