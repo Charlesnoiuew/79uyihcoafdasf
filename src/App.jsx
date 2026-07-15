@@ -7,6 +7,7 @@ import WhyUs from './components/WhyUs'
 import Statement from './components/Statement'
 import CaseStudies from './components/CaseStudies'
 import ARSection from './components/ARSection'
+import AdditionalWorks from './components/AdditionalWorks'
 import Process from './components/Process'
 import Founder from './components/Founder'
 import Contact from './components/Contact'
@@ -25,6 +26,7 @@ export default function App() {
           <Statement />
           <CaseStudies />
           <ARSection />
+          <AdditionalWorks />
           <Process />
           <Founder />
           <Contact />
