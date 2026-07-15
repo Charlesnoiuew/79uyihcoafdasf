@@ -51,14 +51,13 @@ export default function Contact() {
             <nav className="site-footer__nav">
               {['#about', '#services', '#case-studies', '#founder', '#contact'].map((href, i) => (
                 <a key={href} href={href} className="site-footer__nav-link">
-                  {['About', 'Services', 'Work', 'Founder', 'Contact'][i]}
+                  {['About', 'Services', 'Case Studies', 'Founder', 'Contact'][i]}
                 </a>
               ))}
             </nav>
           </div>
           <div className="site-footer__bottom">
             <span className="site-footer__copy">© Dream In Color Entertainment. All rights reserved.</span>
-            <span className="site-footer__credit">A&R'd by Claudia</span>
           </div>
         </div>
       </footer>
