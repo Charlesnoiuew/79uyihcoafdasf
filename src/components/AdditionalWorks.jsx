@@ -12,6 +12,11 @@ const albums = [
     artist: 'Layton Greene',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
   },
+  {
+    title: 'Anybody Wanna Buy a Heart?',
+    artist: 'K.Michelle',
+    image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
+  },
 ]
 
 export default function AdditionalWorks() {
