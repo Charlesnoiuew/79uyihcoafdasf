@@ -22,6 +22,11 @@ const albums = [
     artist: 'K.Michelle',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
   },
+  {
+    title: 'The Wolf of Grape Street',
+    artist: '03 Greedo',
+    image: '/images/the-wolf-of-grape-street.jpg',
+  },
 ]
 
 export default function AdditionalWorks() {
