@@ -27,7 +27,9 @@ export default function Founder() {
             </div>
             <div className="founder__img-caption">
               <span className="founder__img-name display-lg">Claudia Rezir</span>
-              <span className="founder__img-role">Founder, Dream In Color Entertainment</span>
+              <span className="founder__img-role">Founder,</span>
+              <span className="founder__img-role">Dream In Color</span>
+              <span className="founder__img-role">Entertainment</span>
             </div>
           </div>
 
