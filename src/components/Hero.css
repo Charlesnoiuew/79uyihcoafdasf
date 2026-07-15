@@ -86,83 +86,81 @@
   text-align: center;
 }
 
-.hero__serif-line {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+/* Main line — DREAM IN COLOR (white neon glow) */
+.hero__main-line {
   overflow: hidden;
   padding-bottom: 0.04em;
 }
 
-.hero__serif-word {
-  font-family: var(--font-serif);
-  font-size: clamp(88px, 13.5vw, 178px);
-  font-weight: 300;
-  color: var(--white);
-  letter-spacing: -0.01em;
+.hero__main-word {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 12vw, 180px);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   line-height: 1;
   display: block;
+  white-space: nowrap;
   transform: translateY(110%);
   transition: transform 1s cubic-bezier(0.16,1,0.3,1);
-}
-.hero__serif-word--em {
-  font-style: italic;
-  color: rgba(250,248,244,0.65);
-}
-
-.hero__display-line {
-  overflow: hidden;
-  padding-bottom: 0.02em;
-}
-
-.hero__display-word {
-  font-family: var(--font-display);
-  font-size: clamp(116px, 21vw, 280px);
-  color: var(--gold-light);
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  line-height: 0.88;
-  display: block;
-  transform: translateY(110%);
-  transition: transform 1s cubic-bezier(0.16,1,0.3,1) 0.14s;
+  text-shadow:
+    0 0 12px #fff,
+    0 0 30px rgba(255,255,255,0.8),
+    0 0 60px rgba(255,255,255,0.5),
+    0 0 100px rgba(255,255,255,0.3),
+    0 0 180px rgba(255,255,255,0.15);
   animation: none;
 }
 
-.hero--loaded .hero__display-word {
-  animation: colorGlow 3.5s ease-in-out infinite;
+.hero--loaded .hero__main-word {
+  animation: whiteGlow 3.5s ease-in-out infinite;
 }
 
-@keyframes colorGlow {
+@keyframes whiteGlow {
   0%, 100% {
     text-shadow:
-      0 0 80px rgba(228,207,72,0.08),
-      0 0 160px rgba(228,207,72,0.04);
+      0 0 12px #fff,
+      0 0 30px rgba(255,255,255,0.8),
+      0 0 60px rgba(255,255,255,0.5),
+      0 0 100px rgba(255,255,255,0.3),
+      0 0 180px rgba(255,255,255,0.15);
   }
   50% {
     text-shadow:
-      0 0 60px rgba(228,207,72,0.22),
-      0 0 120px rgba(228,207,72,0.12),
-      0 0 220px rgba(228,207,72,0.06);
+      0 0 18px #fff,
+      0 0 44px rgba(255,255,255,0.95),
+      0 0 80px rgba(255,255,255,0.65),
+      0 0 130px rgba(255,255,255,0.4),
+      0 0 220px rgba(255,255,255,0.2);
   }
 }
 
-.hero__display-line--2 { margin-top: 6px; }
+/* Sub line — ENTERTAINMENT (gold neon glow) */
+.hero__sub-line {
+  overflow: hidden;
+  padding-bottom: 0.02em;
+  margin-top: 10px;
+}
 
-.hero__display-word-sm {
+.hero__sub-word {
   font-family: var(--font-display);
-  font-size: clamp(16px, 2.2vw, 28px);
-  color: rgba(250,248,244,0.48);
+  font-size: clamp(16px, 2.4vw, 34px);
+  color: #E4A800;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   display: block;
+  white-space: nowrap;
   transform: translateY(110%);
-  transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.26s;
+  transition: transform 0.8s cubic-bezier(0.16,1,0.3,1) 0.14s;
+  text-shadow:
+    0 0 8px rgba(255,180,0,0.9),
+    0 0 20px rgba(255,160,0,0.6),
+    0 0 40px rgba(255,140,0,0.35),
+    0 0 70px rgba(255,120,0,0.2);
 }
 
-.hero--loaded .hero__serif-word,
-.hero--loaded .hero__serif-word--em,
-.hero--loaded .hero__display-word,
-.hero--loaded .hero__display-word-sm {
+.hero--loaded .hero__main-word,
+.hero--loaded .hero__sub-word {
   transform: translateY(0);
 }
 

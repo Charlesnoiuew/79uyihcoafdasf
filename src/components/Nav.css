@@ -31,39 +31,42 @@
   gap: 0;
   align-items: flex-start;
 }
-.nav__logo-serif {
-  font-family: var(--font-serif);
-  font-size: clamp(15px, 1.8vw, 22px);
-  font-weight: 300;
-  color: var(--white);
-  letter-spacing: -0.01em;
-  line-height: 1;
-  transition: color 0.3s;
-}
-.nav__logo-serif em {
-  font-style: italic;
-  color: rgba(250,248,244,0.65);
-}
 .nav__logo-main {
   font-family: var(--font-display);
-  font-size: clamp(22px, 3vw, 38px);
-  color: var(--gold-light);
+  font-size: clamp(18px, 2.2vw, 30px);
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.01em;
-  line-height: 0.88;
-  transition: color 0.3s;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow:
+    0 0 6px #fff,
+    0 0 14px rgba(255,255,255,0.8),
+    0 0 28px rgba(255,255,255,0.5),
+    0 0 56px rgba(255,255,255,0.25);
+  transition: text-shadow 0.3s;
 }
 .nav__logo-sub {
   font-family: var(--font-display);
-  font-size: clamp(6px, 0.7vw, 9px);
+  font-size: clamp(6px, 0.72vw, 10px);
   font-weight: 700;
-  letter-spacing: 0.44em;
+  letter-spacing: 0.38em;
   text-transform: uppercase;
-  color: rgba(250,248,244,0.45);
-  margin-top: 3px;
+  color: #E4A800;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-shadow:
+    0 0 6px rgba(255,180,0,0.9),
+    0 0 14px rgba(255,160,0,0.6),
+    0 0 28px rgba(255,140,0,0.3);
 }
-.nav__logo:hover .nav__logo-main { color: var(--gold); }
-.nav__logo:hover .nav__logo-serif { color: rgba(250,248,244,0.85); }
+.nav__logo:hover .nav__logo-main {
+  text-shadow:
+    0 0 8px #fff,
+    0 0 20px rgba(255,255,255,0.95),
+    0 0 40px rgba(255,255,255,0.65),
+    0 0 80px rgba(255,255,255,0.35);
+}
 
 /* Links — right aligned */
 .nav__links {

@@ -24,8 +24,7 @@ export default function Nav() {
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <a href="#hero" className="nav__logo">
         <div className="nav__logo-text">
-          <span className="nav__logo-serif">Dream <em>In</em></span>
-          <span className="nav__logo-main">COLOR</span>
+          <span className="nav__logo-main">DREAM IN COLOR</span>
           <span className="nav__logo-sub">ENTERTAINMENT</span>
         </div>
       </a>
