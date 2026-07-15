@@ -8,6 +8,11 @@ const albums = [
     image: '/images/albums/image.png',
   },
   {
+    title: 'Lil Boat 3',
+    artist: 'Lil Yachty',
+    image: '/images/albums/files_5165199-2026-07-15T02-07-37-579Z-image.png',
+  },
+  {
     title: 'Tell Ya Story',
     artist: 'Layton Greene',
     image: '/images/image copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.png',
