@@ -19,7 +19,7 @@ export default function Process() {
           <div className={`animate-on-scroll from-left ${inView ? 'visible' : ''}`}>
             <span className="section-tag">Next Steps</span>
             <h2 className="process__heading display-xl">
-              NEXT<br />STEPS
+              NEXT STEPS
             </h2>
             <p className="process__serif">vibe check required</p>
           </div>
