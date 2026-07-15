@@ -32,6 +32,11 @@ const albums = [
     artist: 'Wiz Khalifa',
     image: '/images/blacchollywood.png',
   },
+  {
+    title: 'Barbershop: The Next Cut (Original Motion Picture Soundtrack)',
+    artist: 'Various Artists',
+    image: '/images/files_5165199-2026-07-15T02-16-49-846Z-image.png',
+  },
 ]
 
 export default function AdditionalWorks() {
