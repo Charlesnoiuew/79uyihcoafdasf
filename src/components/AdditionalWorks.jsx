@@ -27,6 +27,11 @@ const albums = [
     artist: '03 Greedo',
     image: '/images/the-wolf-of-grape-street.jpg',
   },
+  {
+    title: 'Blacc Hollywood',
+    artist: 'Wiz Khalifa',
+    image: '/images/blacchollywood.png',
+  },
 ]
 
 export default function AdditionalWorks() {
