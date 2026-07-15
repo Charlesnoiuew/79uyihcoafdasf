@@ -63,10 +63,16 @@
   font-weight: 400;
 }
 
+.process-step__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .process-step__logo {
-  width: 60px;
+  width: 48px;
   height: auto;
-  margin-bottom: 16px;
   opacity: 0.85;
   transition: opacity 0.35s;
 }

@@ -42,10 +42,12 @@ function ProcessStep({ step, index }) {
   const [ref, inView] = useInView()
   return (
     <div ref={ref} className={`process-step animate-on-scroll ${inView ? 'visible' : ''}`} style={{ transitionDelay: `${index * 0.1}s` }}>
-      <div className="process-step__num">{step.num}</div>
-      {index === 0 && (
-        <img src="/images/image-removebg-preview_(10).png" alt="Dream In Color logo" className="process-step__logo" />
-      )}
+      <div className="process-step__top">
+        <div className="process-step__num">{step.num}</div>
+        {index === 0 && (
+          <img src="/images/image-removebg-preview_(10).png" alt="Dream In Color logo" className="process-step__logo" />
+        )}
+      </div>
       <h3 className="process-step__title">{step.title}</h3>
       <p className="process-step__desc">{step.desc}</p>
     </div>
