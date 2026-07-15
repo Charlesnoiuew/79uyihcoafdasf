@@ -42,6 +42,11 @@ const albums = [
     artist: 'K. Michelle',
     image: '/images/a2835a43-6c34-4667-a63e-35e80f4ca2ea.png',
   },
+  {
+    title: 'Sex, Love & Pain II',
+    artist: 'Tank',
+    image: '/images/a868004a-aec0-4e77-a6a0-832ebe63a19f.png',
+  },
 ]
 
 export default function AdditionalWorks() {
