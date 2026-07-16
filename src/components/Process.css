@@ -70,14 +70,14 @@
   margin-bottom: 20px;
 }
 
-.process-step__logo {
-  width: 80px;
-  height: auto;
+.process-step__icon {
+  width: 36px;
+  height: 36px;
   margin-top: 20px;
-  opacity: 0.85;
-  transition: opacity 0.35s;
+  color: rgba(250,248,244,0.3);
+  transition: color 0.35s;
 }
-.process-step:hover .process-step__logo { opacity: 1; }
+.process-step:hover .process-step__icon { color: rgba(250,248,244,0.55); }
 
 .process__bottom { text-align: center; }
 
