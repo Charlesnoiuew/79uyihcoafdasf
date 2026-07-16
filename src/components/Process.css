@@ -71,13 +71,10 @@
 }
 
 .process-step__icon {
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: auto;
   margin-top: 20px;
-  color: #E4A800;
-  transition: color 0.35s;
 }
-.process-step:hover .process-step__icon { color: #ffc107; }
 
 .process__bottom { text-align: center; }
 

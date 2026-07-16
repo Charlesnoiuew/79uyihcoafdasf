@@ -48,17 +48,7 @@ function ProcessStep({ step, index }) {
       <h3 className="process-step__title">{step.title}</h3>
       <p className="process-step__desc">{step.desc}</p>
       {index === 0 && (
-        <svg className="process-step__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="6" width="26" height="23" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-          <line x1="3" y1="12" x2="29" y2="12" stroke="currentColor" strokeWidth="1.5"/>
-          <line x1="10" y1="3" x2="10" y2="9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          <line x1="22" y1="3" x2="22" y2="9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          <rect x="8" y="16" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.5"/>
-          <rect x="14" y="16" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.5"/>
-          <rect x="20" y="16" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.5"/>
-          <rect x="8" y="21" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.5"/>
-          <rect x="14" y="21" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.5"/>
-        </svg>
+        <img src="/images/image-removebg-preview_(11).png" alt="Calendar" className="process-step__icon" />
       )}
     </div>
   )
