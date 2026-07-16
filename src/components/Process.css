@@ -74,10 +74,10 @@
   width: 36px;
   height: 36px;
   margin-top: 20px;
-  color: rgba(250,248,244,0.3);
+  color: #E4A800;
   transition: color 0.35s;
 }
-.process-step:hover .process-step__icon { color: rgba(250,248,244,0.55); }
+.process-step:hover .process-step__icon { color: #ffc107; }
 
 .process__bottom { text-align: center; }
 
