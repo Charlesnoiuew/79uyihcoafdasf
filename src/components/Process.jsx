@@ -59,6 +59,9 @@ function ProcessStep({ step, index }) {
       {index === 3 && (
         <img src="/images/image-removebg-preview_(14).png" alt="Agreement" className="process-step__icon" />
       )}
+      {index === 4 && (
+        <img src="/images/image-removebg-preview_(15).png" alt="Business Begins" className="process-step__icon" />
+      )}
     </div>
   )
 }
